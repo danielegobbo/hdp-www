@@ -1,8 +1,0 @@
----
-title: "Necessidades - Pequena Cirurgia"
-categoria: "Necessidades"
-estado: publicado
-criado: 2020-04-06
-atualizado: 2020-05-08
----
-<table><tbody><tr><td style="text-align: center;"><strong>Item</strong></td><td style="text-align: center;"><strong>Descrição</strong></td><td style="text-align: center;"><strong>Quantidade</strong></td></tr><tr><td>12.1.</td><td>Arca</td><td>1</td></tr><tr><td>12.2.</td><td>Armário</td><td>2</td></tr><tr><td>12.3.</td><td>Autoclave</td><td>1</td></tr><tr><td>12.4.</td><td>Balde de Lixo Inox</td><td>10</td></tr><tr><td>12.5.</td><td>Biombo Tripartido</td><td>3</td></tr><tr><td>12.6.</td><td>Caixas de Esterilização do Material</td><td>10</td></tr><tr><td>12.7.</td><td>Carinho de Penso</td><td>5</td></tr><tr><td>12.8.</td><td>Carrinho para Roupa Limpa</td><td>1</td></tr><tr><td>12.9.</td><td>Carrinho para Roupa Suja</td><td>1</td></tr><tr><td>12.10.</td><td>Estufa</td><td>1</td></tr><tr><td>12.11.</td><td>Foco de Luz Central</td><td>1</td></tr><tr><td>12.12.</td><td>Foco de Luz Móvel</td><td>4</td></tr><tr><td>12.13.</td><td>Frigorifico para medicamentos</td><td>1</td></tr><tr><td>12.14.</td><td>Kit de Curativo de Ferida Operatória</td><td>15</td></tr><tr><td>12.15.</td><td>Kit de Curativos para Feridas Cronicas</td><td>15</td></tr><tr><td>12.16.</td><td>Kit de Pequena Cirurgia</td><td>5</td></tr><tr><td>12.17.</td><td>Kit de Sutura</td><td>20</td></tr><tr><td>12.18.</td><td>Marquesa Cirúrgica</td><td>1</td></tr><tr><td>12.19.</td><td>Serrote para Gesso</td><td>2</td></tr><tr><td>12.20.</td><td>Suporte de Soro</td><td>4</td></tr></tbody></table>

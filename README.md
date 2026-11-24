@@ -74,6 +74,6 @@ src/data/site.ts       dati generali e menu
 src/pages/             home, contactos, 404 e il modello delle pagine ([...slug].astro)
 src/layouts/Base.astro intestazione, menu, piè di pagina
 public/                file copiati così come sono (favicon, .htaccess)
-arquivo/               contenuti del vecchio sito NON pubblicati (COVID 2020, notizie, progetti, Concept Note…)
+arquivo/               contenuti del vecchio sito NON pubblicati (COVID 2020, notizie, progetti, Concept Note…): solo in locale, escluso dal repo
 scripts/               gen-favicon.mjs (icone dal logo), trim-images.mjs (toglie i bordi bianchi dalle foto in src/assets/img/)
 ```
