@@ -1,0 +1,87 @@
+---
+import { render } from "astro:content";
+import { Image } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import Cards from "../components/Cards.astro";
+import { todasPaginas, filhas, resumo } from "../lib/paginas";
+import { site } from "../data/site";
+
+export async function getStaticPaths() {
+  const todas = await todasPaginas();
+  return todas.map((pagina) => ({ params: { slug: pagina.data.slug }, props: { pagina, todas } }));
+}
+
+const { pagina, todas } = Astro.props;
+const { Content } = await render(pagina);
+const d = pagina.data;
+
+const mae = d.section ? todas.find((p) => p.data.slug === d.section) : undefined;
+const subpaginas = filhas(todas, d.slug);
+const secao = mae ?? pagina;
+const navLateral = [secao, ...filhas(todas, secao.data.slug)];
+const isEspecialidade = d.section === "servicos";
+const fmt = new Intl.DateTimeFormat("pt-PT", { month: "long", year: "numeric" });
+const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
+---
+<Base title={d.title} description={d.description ?? (resumo(pagina) || undefined)}>
+  <div class="page">
+    <nav class="breadcrumb" aria-label="Caminho">
+      <ol>
+        <li><a href="/">Início</a></li>
+        {mae && <li><a href={`/${mae.data.slug}/`}>{mae.data.title}</a></li>}
+        <li aria-current="page">{d.title}</li>
+      </ol>
+    </nav>
+
+    <header class="page-head">
+      <h1>{d.title}</h1>
+      {d.description && <p class="lead">{d.description}</p>}
+    </header>
+
+    <div class:list={["layout", { "has-aside": navLateral.length > 1 }]}>
+      <article>
+        {d.image && !isEspecialidade && (
+          <Image src={d.image} alt="" class="hero-img" widths={[480, 800, 1100]} sizes="(min-width: 980px) 42rem, 100vw" loading="eager" />
+        )}
+
+        <div class="prose">
+          <Content />
+        </div>
+
+        {subpaginas.length > 0 && (
+          <section class="subsection">
+            <span class="eyebrow">{d.title}</span>
+            <h2>{d.slug === "servicos" ? "Consultas de especialidade" : "Nesta secção"}</h2>
+            <Cards paginas={subpaginas} conteudo={d.slug === "servicos"} />
+          </section>
+        )}
+
+        {(d.fonte || d.atualizado) && (
+          <p class="meta">
+            {d.fonte && <>Texto: {d.fonte}. </>}
+            {d.atualizado && <>Última atualização do conteúdo: {fmt.format(d.atualizado)}.</>}
+          </p>
+        )}
+      </article>
+
+      {navLateral.length > 1 && (
+        <aside class="aside">
+          <nav aria-label={secao.data.title}>
+            <span class="eyebrow">{secao.data.title}</span>
+            <ul>
+              {navLateral.map((p) => (
+                <li><a href={`/${p.data.slug}/`} aria-current={p.id === pagina.id ? "page" : undefined}>{p.id === secao.id ? "Apresentação" : p.data.title}</a></li>
+              ))}
+            </ul>
+          </nav>
+          <div class="box">
+            <span class="eyebrow">Precisa de ajuda?</span>
+            <p class="phone"><a href={tel(site.telefone)}>{site.telefone}</a></p>
+            <p>Urgência aberta 24 horas.</p>
+            <p><a href="/contactos/">Todos os contactos →</a></p>
+          </div>
+        </aside>
+      )}
+    </div>
+  </div>
+</Base>

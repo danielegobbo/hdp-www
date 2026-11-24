@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import { resumo, type Pagina } from "../lib/paginas";
+
+interface Props {
+  paginas: Pagina[];
+  conteudo?: boolean; // icone su fondo bianco (specialità) invece di foto
+  colunas?: 3 | 4;
+}
+const { paginas, conteudo = false, colunas } = Astro.props;
+---
+<ul class:list={["cards", { "cards-icons": conteudo, "cards-3": colunas === 3 }]}>
+  {paginas.map((p) => (
+    <li class="card">
+      <a href={`/${p.data.slug}/`}>
+        {p.data.image && (
+          <div class="thumb">
+            <Image src={p.data.image} alt="" widths={conteudo ? [160, 240] : [320, 480, 640]} sizes={conteudo ? "120px" : "(min-width: 980px) 22rem, 100vw"} />
+          </div>
+        )}
+        <div class="body">
+          <h3>{p.data.title}</h3>
+          {resumo(p, 110) && <p>{resumo(p, 110)}</p>}
+        </div>
+      </a>
+    </li>
+  ))}
+</ul>

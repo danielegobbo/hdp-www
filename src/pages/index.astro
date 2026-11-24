@@ -1,0 +1,125 @@
+---
+import { Image } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import Cards from "../components/Cards.astro";
+import { todasPaginas, filhas } from "../lib/paginas";
+import { site } from "../data/site";
+import pavilhao from "../assets/img/hdp-pavilhao.jpg";
+
+const todas = await todasPaginas();
+const unidades = filhas(todas, "rede-sanitaria").filter((p) => p.data.image);
+const especialidades = filhas(todas, "servicos");
+const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
+
+const servicos = [
+  { t: "Urgência", d: "Ambulância, pequena cirurgia e primeiros socorros, 24 horas por dia." },
+  { t: "Internamento", d: "Pediatria (60 camas), Medicina (40), HIV/TB (20) e malnutrição severa (27)." },
+  { t: "Consultas externas", d: "Ambulatórios de TB e HIV, drepanocitose e consultas de especialidade." },
+  { t: "Diagnóstico", d: "Laboratório, transfusões e imagiologia: ecografia, RX, ECG." },
+  { t: "Centros especializados", d: "Doenças infecciosas (HIV/SIDA e Tuberculose) e centro nutricional terapêutico." },
+  { t: "Farmácia", d: "Farmácia interna e externa para os doentes das consultas." },
+];
+---
+<Base>
+  <section class="hero hero-wide">
+    <div class="intro">
+      <div>
+        <span class="eyebrow">Hospital Divina Providência · Luanda</span>
+        <h1>Cuidar<br />com raízes<br /><em>profundas.</em></h1>
+      </div>
+      <div class="intro-text">
+        <p>
+          Desde 1994 ao serviço da população mais carente de Luanda. Um hospital da Obra da Divina Providência,
+          sem fins lucrativos, que colabora com o Sistema Nacional de Saúde.
+        </p>
+        <div class="actions">
+          <a class="button" href={tel(site.telefone)}>Ligar {site.telefone}</a>
+          <a class="button ghost" href="/quem-somos/onde-estamos/">Como chegar &nbsp;→</a>
+        </div>
+      </div>
+    </div>
+    <figure>
+      <Image
+        src={pavilhao}
+        alt="Pavilhão do Hospital Divina Providência com a varanda coberta onde os utentes aguardam, entre loendros em flor"
+        widths={[640, 1024, 1600]}
+        sizes="100vw"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <figcaption>Unidade Central · Kilamba Kiaxi, Luanda</figcaption>
+    </figure>
+  </section>
+
+  <div class="ribbon">
+    <span>01 / Urgência 24 horas</span>
+    <span>02 / Seis unidades de saúde</span>
+    <span>03 / Ao serviço desde 1994</span>
+  </div>
+
+  <section class="section story" id="quem-somos">
+    <div>
+      <span class="eyebrow">Quem somos</span>
+      <h2>Uma presença forte.<br />Ao lado de quem <em>mais precisa.</em></h2>
+    </div>
+    <div>
+      <p>
+        O Hospital Divina Providência pertence à Obra da Divina Providência, organização não governamental
+        angolana vinculada à Igreja Católica, presente em Angola desde 1982. A nossa acção inspira-se no carisma
+        de São João Calábria: servir os mais necessitados com dedicação, disponibilidade e responsabilidade.
+      </p>
+      <div class="story-detail">
+        <span class="number">1994.</span>
+        <p>
+          Ano de construção do hospital. Hoje somos órgão dependente da Direcção Provincial de Saúde de Luanda e
+          servimos o Município de Kilamba Kiaxi com uma unidade central e cinco centros periféricos.
+        </p>
+        <div class="actions"><a class="button ghost" href="/quem-somos/">Conhecer a nossa história &nbsp;→</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section paper" id="servicos">
+    <div class="section-top">
+      <div>
+        <span class="eyebrow">Serviços</span>
+        <h2>Cuidados para toda a família.</h2>
+      </div>
+      <p>A Unidade Central oferece cuidados de nível secundário, com serviços polivalentes e centros especializados.</p>
+    </div>
+    <ul class="tiles">
+      {servicos.map((s) => (
+        <li class="tile"><strong>{s.t}</strong><p>{s.d}</p></li>
+      ))}
+    </ul>
+    <p class="more"><a href="/servicos/">Ver todos os serviços e as {especialidades.length} consultas de especialidade →</a></p>
+  </section>
+
+  <section class="section" id="rede">
+    <div class="section-top">
+      <div>
+        <span class="eyebrow">Rede Sanitária</span>
+        <h2>Perto das famílias.</h2>
+      </div>
+      <p>Uma Unidade Central e cinco centros de saúde periféricos no Município de Kilamba Kiaxi.</p>
+    </div>
+    <Cards paginas={unidades} colunas={3} />
+  </section>
+
+  <section class="quote">
+    <blockquote>«Servir os mais necessitados,<br />com dedicação e responsabilidade.»</blockquote>
+    <p>Inspirados no carisma de São João Calábria</p>
+  </section>
+
+  <section class="section contact" id="colaborar">
+    <div>
+      <span class="eyebrow">Como colaborar</span>
+      <h2>Juntos chegamos mais longe.</h2>
+      <p>O hospital vive também graças a parceiros, fornecedores e benfeitores. Saiba como pode ajudar ou marque uma reunião connosco.</p>
+    </div>
+    <div class="actions">
+      <a class="button" href="/como-colaborar/">Como colaborar &nbsp;→</a>
+      <a class="button ghost" href="/como-colaborar/agendar-reuniao/">Agendar uma reunião</a>
+    </div>
+  </section>
+</Base>

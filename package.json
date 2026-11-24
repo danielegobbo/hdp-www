@@ -1,0 +1,21 @@
+{
+  "name": "hdp-site",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Sito statico dell'Hospital Divina Providência (Luanda)",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "migrate": "node scripts/migrate.mjs && node scripts/trim-images.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.0",
+    "@astrojs/sitemap": "3.7.4"
+  },
+  "devDependencies": {
+    "turndown": "7.2.4",
+    "turndown-plugin-gfm": "1.0.2"
+  }
+}

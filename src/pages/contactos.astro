@@ -1,0 +1,52 @@
+---
+import Base from "../layouts/Base.astro";
+import { site } from "../data/site";
+const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
+---
+<Base title="Contactos" description={`Telefones, e-mail, morada e horário do ${site.nome} em Luanda.`}>
+  <div class="page">
+    <nav class="breadcrumb" aria-label="Caminho">
+      <ol><li><a href="/">Início</a></li><li aria-current="page">Contactos</li></ol>
+    </nav>
+    <header class="page-head">
+      <h1>Contactos</h1>
+      <p class="lead">Em caso de urgência dirija-se directamente à Unidade Central: está aberta 24 horas por dia.</p>
+    </header>
+
+    <ul class="contacts">
+      {site.contactos.map((c) => (
+        <li>
+          <strong>{c.nome}</strong>
+          <p><a href={tel(c.telefone)}>{c.telefone}</a></p>
+          {c.email && <p><a href={`mailto:${c.email}`}>{c.email}</a></p>}
+        </li>
+      ))}
+    </ul>
+
+    <div class="story" style="margin-top: 60px;">
+      <div>
+        <span class="eyebrow">Morada</span>
+        <h2>Onde estamos.</h2>
+        <p>{site.morada}</p>
+        <div class="actions">
+          <a class="button" href={site.mapa}>Abrir no Google Maps ↗</a>
+          <a class="button ghost" href="/quem-somos/onde-estamos/">Centros periféricos</a>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">Horário</span>
+        <h2>Quando.</h2>
+        {site.horario.map((h) => <div class="story-detail" style="margin-top: 18px; padding-top: 16px;"><strong>{h.local}</strong><p style="margin-top: 4px;">{h.horas}</p></div>)}
+      </div>
+    </div>
+
+    <section class="contact section" style="padding-inline: 0; padding-bottom: 0;">
+      <div>
+        <span class="eyebrow">Reuniões e parcerias</span>
+        <h2>Falemos.</h2>
+        <p>Para fornecedores, patrocinadores ou outras propostas, marque uma reunião com a direcção do hospital.</p>
+      </div>
+      <a class="button" href="/como-colaborar/agendar-reuniao/">Agendar uma reunião &nbsp;→</a>
+    </section>
+  </div>
+</Base>

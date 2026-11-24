@@ -1,0 +1,107 @@
+---
+import { Image, getImage } from "astro:assets";
+import logo from "../assets/logo-transparente.png";
+import fotoPartilha from "../assets/img/hdp-pavilhao.jpg";
+import { site, menu } from "../data/site";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description = site.descricao } = Astro.props;
+const fullTitle = title ? `${title} | ${site.nome}` : `${site.nome} — Luanda`;
+const path = Astro.url.pathname;
+const canonical = new URL(path, Astro.site);
+// "/" (Início) è attivo solo sulla home, le altre voci anche sulle loro sottopagine
+const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
+// Immagine di anteprima per WhatsApp/Facebook (1200x630, formato JPEG per compatibilità)
+const og = await getImage({ src: fotoPartilha, width: 1200, height: 630, fit: "cover", position: "left", format: "jpg" });
+const ogUrl = new URL(og.src, Astro.site);
+---
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="theme-color" content="#38271e" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="pt_AO" />
+    <meta property="og:image" content={ogUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pavilhão do Hospital Divina Providência em Luanda" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+    <header class="header">
+      <a class="logo" href="/" aria-label={`${site.nome}, início`}>
+        <Image src={logo} alt="" width={34} densities={[1, 2]} loading="eager" />
+        <span class="logo-text">Hospital Divina Providência<span>.</span><small>Luanda – Angola</small></span>
+      </a>
+      <nav class="nav nav-desktop" aria-label="Menu principal">
+        <ul>
+          {menu.map((m) => (
+            <li><a href={m.href} aria-current={path === m.href ? "page" : undefined} class:list={{ active: isActive(m.href) }}>{m.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+      <details class="nav-details">
+        <summary class="menu-toggle">Menu</summary>
+        <nav class="nav" aria-label="Menu principal (móvel)">
+          <ul>
+            {menu.map((m) => (
+              <li><a href={m.href} aria-current={path === m.href ? "page" : undefined} class:list={{ active: isActive(m.href) }}>{m.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </details>
+    </header>
+
+    <main id="conteudo">
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <span class="eyebrow">{site.nome}</span>
+          <p>{site.morada}</p>
+          <p><a href={site.mapa}>Ver no mapa ↗</a></p>
+        </div>
+        <div>
+          <span class="eyebrow">Contactos</span>
+          <p><a href={tel(site.telefone)}>{site.telefone}</a></p>
+          <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+        </div>
+        <div>
+          <span class="eyebrow">Horário</span>
+          {site.horario.map((h) => <p><strong>{h.local}</strong><br />{h.horas}</p>)}
+        </div>
+        <div>
+          <span class="eyebrow">Navegação</span>
+          <ul>
+            {menu.map((m) => <li><a href={m.href}>{m.label}</a></li>)}
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© {new Date().getFullYear()} Obra da Divina Providência — {site.nome}</span>
+        <span>Luanda · Angola</span>
+      </div>
+    </footer>
+  </body>
+</html>
