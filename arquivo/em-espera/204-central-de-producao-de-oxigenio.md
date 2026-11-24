@@ -1,10 +1,9 @@
 ---
 title: "Concept Note - Central de Produção de Oxigenio"
 categoria: "Em Espera"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-10
 atualizado: 2020-04-19
-joomlaId: 204
 ---
 **Tipologia:** Saude
 

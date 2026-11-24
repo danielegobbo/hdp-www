@@ -1,10 +1,9 @@
 ---
 title: "Irmãs Coraçonistas - Doação Medicamentos"
 categoria: "Doações"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-05-05
 atualizado: 2020-05-05
-joomlaId: 226
 ---
 No passado dia 30/04/2020, recebemos os medicamentos abaixo a titulo de doação procedente das Irmãs Coraçonistas.
 

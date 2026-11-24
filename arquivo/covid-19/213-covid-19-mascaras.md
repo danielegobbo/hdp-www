@@ -1,10 +1,9 @@
 ---
 title: "COVID-19 - Mascaras"
 categoria: "COVID-19"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-03-28
 atualizado: 2020-04-17
-joomlaId: 213
 ---
 ![](images/hdp/covid-19/mascara_caseira_1.jpeg)
 

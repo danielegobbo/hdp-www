@@ -4,7 +4,6 @@ title: "A descentralização dos serviços"
 section: rede-sanitaria
 order: 0
 atualizado: 2020-04-30
-joomlaId: 88
 ---
 Aa rede sanitária do **HDP** é constituída por 5 centros periféricos de saúde e una unidade central.
 

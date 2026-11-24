@@ -1,10 +1,9 @@
 ---
 title: "Centro Multifuncional VIH/TB  - BMA (2018)"
 categoria: "2018"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-06
 atualizado: 2020-04-06
-joomlaId: 179
 ---
 O objectivo geral da presente proposta é criar um sistema integrado de apoio aos doentes com HIV/SIDA, Tuberculose e outras doenças oportunistas, que possa fornecer contemporaneamente serviços médicos, serviços de acompanhamento psicossocial e de empoderamento social, com um abordagem holística do paciente no ambiente onde vive. Ao mesmo tempo, queremos apostar na promoção da pesquisa científica e do intercâmbio, para recolher dados fiáveis sobre a situação epidemiológica do país com relação a estas doenças prioritárias.
 

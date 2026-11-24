@@ -1,10 +1,9 @@
 ---
 title: "COVID-19 - Emergência Nacional"
 categoria: "COVID-19"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-03-28
 atualizado: 2020-04-10
-joomlaId: 77
 ---
 A Assembleia Nacional angolana aprovou nesta quinta-feira, 9, a resolução que autoriza o Presidente da República a renovar o estado de emergência, em vigor desde 27 de março, como forma de combater a pandemia do novo coronavírus.
 

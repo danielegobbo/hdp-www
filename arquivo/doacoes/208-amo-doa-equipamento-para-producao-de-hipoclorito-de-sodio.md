@@ -1,10 +1,9 @@
 ---
 title: "AMO doa equipamento para produção de Hipoclorito de Sodio"
 categoria: "Doações"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-13
 atualizado: 2020-05-01
-joomlaId: 208
 ---
 AMO Amigos do Marco doa ao Hospital Divina Providência um equipamento para produção de Hipoclorito de Sodio.
 

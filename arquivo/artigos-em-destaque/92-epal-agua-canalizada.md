@@ -1,10 +1,9 @@
 ---
 title: "EPAL Consegue colocar agua canalizada no hospital"
 categoria: "Artigos Em Destaque"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-03-30
 atualizado: 2021-06-12
-joomlaId: 92
 ---
 EPAL Consegue colocar agua canalizada no Hospital Divina Providência e garantir a necessidade de 40 mil litros de agua dia.
 

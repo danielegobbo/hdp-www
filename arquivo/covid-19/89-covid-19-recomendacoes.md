@@ -1,10 +1,9 @@
 ---
 title: "COVID-19 - Recomendações"
 categoria: "COVID-19"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-03-28
 atualizado: 2020-04-17
-joomlaId: 89
 ---
 A MELHOR EXPLICAÇÃO ATÉ AGORA SOBRE A PANDEMIA COVID 19. É muito longa, mas se tiver paciência de ler ...
 

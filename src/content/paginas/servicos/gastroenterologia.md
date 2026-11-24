@@ -3,8 +3,17 @@ slug: servicos/gastroenterologia
 title: "Gastroenterologia"
 section: servicos
 image: ../../../assets/img/consultas-especialidades/estomago.png
-fonte: "Wikipédia (CC BY-SA 4.0)"
-atualizado: 2020-04-08
-joomlaId: 124
+description: "Consulta de Gastroenterologia no Hospital Divina Providência: estômago, intestinos e fígado."
+atualizado: 2026-11-24
 ---
-A [**Gastroenterologia**](https://pt.wikipedia.org/wiki/Gastroenterologia) ou **Gastrenterologia** é a especialidade médica que se ocupa do estudo, diagnóstico e tratamento clínico das doenças do [aparelho digestivo](https://pt.wikipedia.org/wiki/Aparelho_digestivo). O tratamento cirúrgico de tais patologias é abordado pela [Cirurgia do Aparelho Digestivo](https://pt.wikipedia.org/wiki/Cirurgia_do_Aparelho_Digestivo).
+A Gastroenterologia trata as doenças do **aparelho digestivo**: esófago, estômago, intestinos, fígado, vesícula e pâncreas.
+
+## Quando marcar uma consulta
+
+- Dor ou ardor no estômago frequente
+- Diarreia ou prisão de ventre que duram há semanas
+- Sangue nas fezes ou fezes muito escuras
+- Náuseas ou vómitos repetidos
+- Pele ou olhos amarelados (icterícia), hepatite
+
+Em caso de dor forte, febre alta, dificuldade em respirar ou acidente, não espere pela consulta: dirija-se à **Urgência**.

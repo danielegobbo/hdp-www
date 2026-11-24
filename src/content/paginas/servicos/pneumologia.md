@@ -3,12 +3,19 @@ slug: servicos/pneumologia
 title: "Pneumologia"
 section: servicos
 image: ../../../assets/img/consultas-especialidades/pulmoes.png
-fonte: "Wikipédia (CC BY-SA 4.0)"
-atualizado: 2020-04-08
-joomlaId: 120
+description: "Consulta de Pneumologia no Hospital Divina Providência: asma, tosse crónica, tuberculose e doenças dos pulmões."
+atualizado: 2026-11-24
 ---
-**Pneumologia** é a especialidade médica a qual é responsável pelo tratamento das patologias das [vias aéreas inferiores](https://pt.wikipedia.org/wiki/Via_respirat%C3%B3ria). O profissional habilitado para atuar nessa especialidade é denominado *pneumologista*.
+A Pneumologia trata as doenças dos **pulmões** e das vias respiratórias: asma, bronquite, pneumonia, tuberculose e outras doenças que causam tosse ou falta de ar.
 
-Entre as doenças sob enfoque da pneumologia encontram-se [Apnéia Obstrutiva do Sono](https://pt.wikipedia.org/wiki/Apneia_de_sono), [Asma](https://pt.wikipedia.org/wiki/Asma), [Bronquite](https://pt.wikipedia.org/wiki/Bronquite), [Doença Pulmonar Obstrutiva crônica (DPOC)](https://pt.wikipedia.org/wiki/DPOC), [Pneumonias](https://pt.wikipedia.org/wiki/Pneumonia) em suas variadas etiologias, Deficiência de Alfa-1-antitripsina (DAAT), [Fibrose Cística](https://pt.wikipedia.org/wiki/Fibrose_C%C3%ADstica), [Tuberculose](https://pt.wikipedia.org/wiki/Tuberculose), Micoses Pulmonares, Doenças Pulmonares Interticiais, Transtornos vasculares dos pulmões, Doenças auto-imunes com comprometimento pulmonar e as [Pneumoconioses](https://pt.wikipedia.org/wiki/Pneumoconiose).
+## Quando marcar uma consulta
 
-Além da avaliação clínica, os Pneumologistas são habilitados para a realização de [exame espirométrico (ou espirometria)](https://pt.wikipedia.org/wiki/Espirometria) de broncoscopia.
+- Tosse que dura há mais de duas semanas
+- Falta de ar, pieira ou aperto no peito
+- Expectoração com sangue
+- Febre, suores nocturnos e perda de peso (sinais de possível tuberculose)
+- Asma ou bronquite que não estão controladas
+
+A tuberculose é acompanhada também no [Centro de Doenças Infecciosas](/servicos/) do hospital.
+
+Em caso de dor forte, febre alta, dificuldade em respirar ou acidente, não espere pela consulta: dirija-se à **Urgência**.

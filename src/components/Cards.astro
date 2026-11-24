@@ -6,14 +6,15 @@ interface Props {
   paginas: Pagina[];
   conteudo?: boolean; // icone su fondo bianco (specialità) invece di foto
   colunas?: 3 | 4;
+  imagens?: boolean; // false = solo titolo e testo, senza immagine
 }
-const { paginas, conteudo = false, colunas } = Astro.props;
+const { paginas, conteudo = false, colunas, imagens = true } = Astro.props;
 ---
 <ul class:list={["cards", { "cards-icons": conteudo, "cards-3": colunas === 3 }]}>
   {paginas.map((p) => (
     <li class="card">
       <a href={`/${p.data.slug}/`}>
-        {p.data.image && (
+        {imagens && p.data.image && (
           <div class="thumb">
             <Image src={p.data.image} alt="" widths={conteudo ? [160, 240] : [320, 480, 640]} sizes={conteudo ? "120px" : "(min-width: 980px) 22rem, 100vw"} />
           </div>

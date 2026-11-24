@@ -1,10 +1,9 @@
 ---
 title: "ENI Formação – 4º ciclo (2019)"
 categoria: "2019"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-06
 atualizado: 2020-09-23
-joomlaId: 183
 ---
 *AGENDA CONSELHO ADMINISTRATIVO*
 

@@ -19,7 +19,6 @@ const paginas = defineCollection({
       // Attribuzione del testo, se ripreso da altre fonti
       fonte: z.string().optional(),
       atualizado: z.coerce.date().optional(),
-      joomlaId: z.number().optional(),
       // true = esclusa dal sito (bozza)
       rascunho: z.boolean().default(false),
     }),

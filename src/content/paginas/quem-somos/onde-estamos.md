@@ -4,7 +4,6 @@ title: "Onde Estamos"
 section: quem-somos
 order: 2
 atualizado: 2020-05-07
-joomlaId: 75
 ---
 [Hospital Divina Providência](https://maps.app.goo.gl/MUC1PeFY3kJiVYa28)
 

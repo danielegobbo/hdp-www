@@ -3,8 +3,17 @@ slug: servicos/optometria-oftalmologia
 title: "Optometria/Oftalmologia"
 section: servicos
 image: ../../../assets/img/consultas-especialidades/olho.png
-fonte: "Wikipédia (CC BY-SA 4.0)"
-atualizado: 2020-04-08
-joomlaId: 121
+description: "Consulta de Optometria e Oftalmologia no Hospital Divina Providência: exame da visão e doenças dos olhos."
+atualizado: 2026-11-24
 ---
-A **oftalmologia** ([grego](https://pt.wikipedia.org/wiki/L%C3%ADngua_grega): *ophthalmós* (olho) + *logos* (estudo): estudo do olho) é uma especialidade da [medicina](https://pt.wikipedia.org/wiki/Medicina) que estuda e trata as doenças relacionadas ao olho, à refração e aos [olhos](https://pt.wikipedia.org/wiki/Olho) e seus anexos. O médico oftalmologista realiza [cirurgias](https://pt.wikipedia.org/wiki/Cirurgia), prescreve tratamentos e correções para os distúrbios de visão. A oftalmologia tem várias sub-especialidades, entre elas a oftalmo-pediatria, a plástica ocular, doenças orbitárias, doenças das vias lacrimais, o estrabismo, o glaucoma, a cirurgia refrativa, retina,córnea, etc.
+A **Optometria** avalia a visão e indica os óculos adequados. A **Oftalmologia** diagnostica e trata as doenças dos olhos, como as infecções, a catarata e o glaucoma.
+
+## Quando marcar uma consulta
+
+- Dificuldade em ver ao longe ou ao perto
+- Dores de cabeça ao ler ou a olhar para ecrãs
+- Olhos vermelhos, com comichão ou com secreção
+- Visão turva ou enevoada (pode ser catarata)
+- Diabetes ou tensão alta: convém examinar os olhos com regularidade
+
+Em caso de dor forte, febre alta, dificuldade em respirar ou acidente, não espere pela consulta: dirija-se à **Urgência**.

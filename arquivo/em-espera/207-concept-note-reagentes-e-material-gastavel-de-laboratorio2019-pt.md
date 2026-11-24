@@ -1,10 +1,9 @@
 ---
 title: "Concept Note - Reagentes e Material Gastavel de Laboratorio 2019 PT"
 categoria: "Em Espera"
-estado_joomla: não publicado
+estado: não publicado
 criado: 2020-04-10
 atualizado: 2020-04-19
-joomlaId: 207
 ---
 **Tipologia:** Saude
 

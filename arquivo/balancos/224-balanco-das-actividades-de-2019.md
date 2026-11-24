@@ -1,10 +1,9 @@
 ---
 title: "Relatorio das actividades de 2019"
 categoria: "Balanços"
-estado_joomla: publicado
+estado: publicado
 criado: 2019-04-18
 atualizado: 2020-05-07
-joomlaId: 224
 ---
 A rede sanitária do Hospital Divina Providência conta com um conjunto de unidades e sectores diferenciados segundo o tipo de prestação de cuidados de saúde oferecidos. Assim temos 5 (cinco) unidades perifericas vocacionadas para a Atenção Primária (nível primário), uma unidade central de referência com prestações polivalentes (nível secundário), uma capacidade de internamento de 147 camas, um centro para o tratamento da tuberculose, um centro para o tratamento da SIDA, um centro para o tratamento da malnutrição severa de forma a dar uma resposta mais completa possível à demanda de assistência sanitária na área de saúde de nossa competência.
 

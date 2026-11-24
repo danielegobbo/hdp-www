@@ -3,16 +3,17 @@ slug: servicos/reumatologia
 title: "Reumatologia"
 section: servicos
 image: ../../../assets/img/consultas-especialidades/osso.png
-fonte: "Wikipédia (CC BY-SA 4.0)"
-atualizado: 2020-04-08
-joomlaId: 116
+description: "Consulta de Reumatologia no Hospital Divina Providência: artrite, gota, osteoporose e dores nas articulações."
+atualizado: 2026-11-24
 ---
-**Reumatologia** é a área do conhecimento médico que se ocupa do estudo das [doenças](https://pt.wikipedia.org/wiki/Doen%C3%A7a) que acometem os [tecidos conjuntivos](https://pt.wikipedia.org/wiki/Tecido_conjuntivo), que incluem as [articulações](https://pt.wikipedia.org/wiki/Articula%C3%A7%C3%A3o), os [ossos](https://pt.wikipedia.org/wiki/Osso), os [músculos](https://pt.wikipedia.org/wiki/M%C3%BAsculo), os [tendões](https://pt.wikipedia.org/wiki/Tend%C3%A3o) e os [ligamentos](https://pt.wikipedia.org/wiki/Ligamento). Estas patologias são muitas vezes designadas de **doenças reumáticas**. **[Reumatismo](https://pt.wikipedia.org/wiki/Reumatismo)** é o termo genérico usado para designar este grupo de [doenças](https://pt.wikipedia.org/wiki/Doen%C3%A7a).
+A Reumatologia trata as **doenças reumáticas**, que afectam as articulações, os ossos, os músculos e os tendões. Algumas são inflamatórias (como a artrite reumatóide), outras resultam do desgaste (como a artrose).
 
-O **reumatologista** é o medico especializado nesta área do conhecimento.
+## Quando marcar uma consulta
 
-As doenças reumáticas subdividem-se em:
+- Dor e rigidez nas articulações, sobretudo de manhã
+- Articulações inchadas, quentes ou vermelhas
+- Crises de dor forte no dedo grande do pé (gota)
+- Dores musculares espalhadas pelo corpo
+- Fracturas com quedas pequenas (osteoporose)
 
--   Doenças reumáticas crónicas **imunomediadas**
--   Doenças reumáticas **não imunomediadas**
-    -   como por exemplo, [fibromialgia](https://pt.wikipedia.org/wiki/Fibromialgia), [gota](https://pt.wikipedia.org/wiki/Gota_(doen%C3%A7a)), [tendinites](https://pt.wikipedia.org/wiki/Tendinite), [osteoporose](https://pt.wikipedia.org/wiki/Osteoporose) e [osteoartrose](https://pt.wikipedia.org/wiki/Osteoartrite)
+Em caso de dor forte, febre alta, dificuldade em respirar ou acidente, não espere pela consulta: dirija-se à **Urgência**.

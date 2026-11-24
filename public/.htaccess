@@ -1,4 +1,4 @@
-# Generato da scripts/gen-htaccess.mjs — non modificare a mano
+# Configurazione Apache del sito: redirect dai vecchi indirizzi, pagina 404, cache, sicurezza. Si modifica a mano.
 Options -Indexes
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
@@ -11,7 +11,7 @@ RewriteBase /
 # RewriteCond %{HTTPS} off
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-# --- Vecchi URL Joomla: /index.php?option=com_content&view=...&id=N ---
+# --- Vecchi indirizzi del sito precedente: /index.php?option=com_content&view=...&id=N ---
 RewriteCond %{QUERY_STRING} (^|&)view=article(&|$)
 RewriteCond %{QUERY_STRING} (^|&)id=198([:&]|$)
 RewriteRule ^(index\.php)?$ /como-colaborar/convenios/ [R=301,L,QSD]
@@ -524,7 +524,7 @@ RewriteRule ^(index\.php)?$ /contactos/ [R=301,L,QSD]
 RewriteCond %{QUERY_STRING} option=com_
 RewriteRule ^(index\.php)?$ / [R=301,L,QSD]
 
-# --- Vecchi URL Joomla con SEF: /index.php/<menu>/... ---
+# --- Vecchi indirizzi del sito precedente (formato breve): /index.php/<menu>/... ---
 RewriteRule ^index\.php/internamento-centro-nutricional-terapeutico(/.*)?/?$ /servicos/ [R=301,L]
 RewriteRule ^index\.php/quem-somos/a-nossa-nova-organizacao(/.*)?/?$ /quem-somos/ [R=301,L]
 RewriteRule ^index\.php/o-que-fazemos/projectos/concluidos(/.*)?/?$ / [R=301,L]
@@ -584,7 +584,7 @@ RewriteRule ^index\.php/pipsa(/.*)?/?$ / [R=301,L]
 RewriteRule ^index\.php/pnud(/.*)?/?$ / [R=301,L]
 RewriteRule ^index\.php(/.*)?$ / [R=301,L,QSD]
 
-# --- Vecchie cartelle Joomla ---
+# --- Vecchie cartelle del sito precedente ---
 RewriteRule ^(administrator|components|modules|plugins|templates|media|images|cache|tmp|libraries)(/.*)?$ / [R=301,L]
 </IfModule>
 

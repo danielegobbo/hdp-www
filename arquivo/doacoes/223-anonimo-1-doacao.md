@@ -1,10 +1,9 @@
 ---
 title: "Anonimo 1 - Doação"
 categoria: "Doações"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-30
 atualizado: 2020-05-01
-joomlaId: 223
 ---
 Caros senhores,
 

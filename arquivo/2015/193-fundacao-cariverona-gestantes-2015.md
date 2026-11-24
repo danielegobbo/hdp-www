@@ -1,10 +1,9 @@
 ---
 title: "Fundação Cariverona Gestantes (2015)"
 categoria: "2015"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-06
 atualizado: 2020-04-06
-joomlaId: 193
 ---
 Melhoria dos serviços sanitários para as mulheres grávidas, na prevenção, formação e cura para o acompanhamento psicológico e físico durante o período pré-natal e ajudar a reduzir a taxa de mortalidade materna na capital, Luanda, assegurando o acesso universal à saúde reprodutiva.
 

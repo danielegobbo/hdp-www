@@ -3,7 +3,6 @@ slug: quem-somos
 title: "Quem Somos"
 order: 1
 atualizado: 2020-05-07
-joomlaId: 73
 ---
 O Hospital Divina Providência (HDP), construído no ano 1994, é uma Instituição que pertence à Obra da Divina Providência, Organização não Governamental Nacional vinculada à Igreja Católica, sem fins lucrativos, cujo objecto social é oferecer assistência à população mais carente.
 

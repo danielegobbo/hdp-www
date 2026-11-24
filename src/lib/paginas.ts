@@ -9,7 +9,7 @@ export async function todasPaginas(): Promise<Pagina[]> {
 // Ordine: campo `order`, poi alfabetico
 export function ordenar(a: Pagina, b: Pagina) {
   const oa = a.data.order ?? 999, ob = b.data.order ?? 999;
-  return oa - ob || a.data.title.localeCompare(b.data.title, "pt");
+  return oa - ob || a.data.title.localeCompare(b.data.title, "pt-AO");
 }
 
 export function filhas(todas: Pagina[], slug: string) {

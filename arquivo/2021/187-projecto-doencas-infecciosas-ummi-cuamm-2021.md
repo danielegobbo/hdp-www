@@ -1,10 +1,9 @@
 ---
 title: "Projecto doenças infecciosas – UMMI/CUAMM (2021)"
 categoria: "2021"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-06
 atualizado: 2020-04-06
-joomlaId: 187
 ---
 Programa de Sensibilização Comunitária para o VIH/SIDA dirigido a Agentes Comunitários para o PNUD enquanto Receptor Principal da Subvenção para o VIH do Fundo Global em Angola.
 

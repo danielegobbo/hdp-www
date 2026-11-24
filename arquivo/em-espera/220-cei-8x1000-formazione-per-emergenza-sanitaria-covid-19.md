@@ -1,10 +1,9 @@
 ---
 title: "CEI 8x1000 - Formazione per l’emergenza sanitaria COVID-19"
 categoria: "Em Espera"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-10
 atualizado: 2020-04-20
-joomlaId: 220
 ---
 **Tipologia:** Salute / Formazione
 

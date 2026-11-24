@@ -1,10 +1,9 @@
 ---
 title: "COVID-19 - Protocolos de prevenção e segurança"
 categoria: "COVID-19"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-03-28
 atualizado: 2020-04-17
-joomlaId: 211
 ---
 ![](images/hdp/covid-19/pessoas_em_risco_1.jpeg)
 

@@ -3,43 +3,20 @@ slug: como-colaborar/agendar-reuniao
 title: "Agendar uma reunião"
 section: como-colaborar
 order: 4
-atualizado: 2020-04-06
-joomlaId: 166
+description: "Como marcar uma reunião com a direcção do Hospital Divina Providência."
+atualizado: 2026-11-24
 ---
-#### Formulario agendamento reunião.
+Para marcar uma reunião com a direcção do hospital, envie um e-mail para **[geral@hospitaldivinaprovidencia.net](mailto:geral@hospitaldivinaprovidencia.net?subject=Pedido%20de%20reuni%C3%A3o)** ou ligue para o **+244 916 025 301**.
 
-Preencha o formularios com os seus dados para agendar uma reunião..
+## Indique no pedido
 
-Primeiro Nome: \*
+- O seu nome e, se for o caso, a empresa ou instituição que representa
+- Um contacto telefónico
+- Com quem pretende falar: **Direcção Geral**, **Direcção Administrativa**, **Direcção Clínica** ou **Direcção de Enfermagem**
+- O assunto da reunião e as datas em que está disponível
 
-Ultimo Nome: \*
+A Secretaria Geral responde com a confirmação do dia e da hora.
 
-Data de nascimento:(dd/mm/aaaa)
+## Onde
 
-Sexo:
-
-FemeninoMasculino
-
-Email:
-
-Endereço:
-
-Telemovel:
-
-Pretendo agendar uma reunião com:
-
-Direcção GeralDirecção AdministrativaDirecção ClinicaDirecção de Enfermagem
-
-Outras informações que pretende dar a conhecer:
-
-Enviar
-
-#### Agendar uma reunião
-
-Obrigado para entrar em contacto conosco!
-
--   Avenida Pedro de Castro Van Dunem, Bairro Golf, Municipio Kilamba Kiaxi, Luanda, AO
-
--   +244 916 025 301
-
--   geral@hospitaldivinaprovidencia.net
+Unidade Central do Hospital Divina Providência, Avenida Pedro de Castro Van Dunem, Bairro Golf, Município de Kilamba Kiaxi, Luanda. [Ver como chegar](/quem-somos/onde-estamos/).

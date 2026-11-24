@@ -1,10 +1,9 @@
 ---
 title: "As soluções devem ser para as pessoas e não para o dinheiro"
 categoria: "Artigos Em Destaque"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-10
 atualizado: 2020-05-01
-joomlaId: 210
 ---
 *"As soluções devem ser para as pessoas e não para o dinheiro"*, afirma Papa Francisco.
 

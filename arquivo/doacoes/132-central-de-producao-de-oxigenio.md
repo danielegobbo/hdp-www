@@ -1,10 +1,9 @@
 ---
 title: "Central de Produção de Oxigenio"
 categoria: "Doações"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-03
 atualizado: 2020-04-30
-joomlaId: 132
 ---
 O Hospital Divina Providência (HDP) está localizado no município do Kilamba Kiaxi, no Bairro Golf. Este é um dos municípios com uma das densidades populacionais mais elevadas de Luanda (Coordenadas: 8°50′18″S 13°14′4″E). A estima é de 2.487.484 habitantes num território de 113 km2 e 7.805.000 habitantes, no território extraurbano com uma superfície de 2.417 km2 o que perfaz uma densidade populacional de 22.000 habitantes/km2 e 3.200 habitantes/km2 respectivamente.
 

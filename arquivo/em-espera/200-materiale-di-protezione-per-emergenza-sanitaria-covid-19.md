@@ -1,10 +1,9 @@
 ---
 title: "Concept Note - Dispositivi di Protezione Individuale (DPI) per l’emergenza sanitaria COVID-19"
 categoria: "Em Espera"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-10
 atualizado: 2020-04-20
-joomlaId: 200
 ---
 **Tipologia:** Salute
 

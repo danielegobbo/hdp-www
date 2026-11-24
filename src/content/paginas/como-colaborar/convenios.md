@@ -4,7 +4,6 @@ title: "Convénios"
 section: como-colaborar
 order: 3
 atualizado: 2020-04-07
-joomlaId: 198
 ---
 O Convenio de Cooperação (CC) é um instrumento entre entidades Publico/Privada, Congregações, Particulares e o Hospital Divina Providência (HDP) cujo o objectivo é garantir padroes de atendimentos diferenciados.
 

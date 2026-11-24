@@ -1,10 +1,9 @@
 ---
 title: "COVID-19 - Material Informativo"
 categoria: "COVID-19"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-03-28
 atualizado: 2021-06-12
-joomlaId: 203
 ---
 “ As pessoas precisam de algumas referências para acreditar nas palavras de alguém. Pois bem, tenho 67 anos, sou biólogo aposentado, trabalhei na Seção de Raiva e Encefalomielite do Instituto Biológico de São Paulo, fui assistente do cientista Moacyr Rossi Nilson, trabalhei com o vírus da raiva, um virus que causa 99% de letalidade.
 Trabalhei na Seção de Bacteriologia Animal também. Sou professor de biologia.

@@ -1,10 +1,9 @@
 ---
 title: "Concept Note - Agua canalizada"
 categoria: "Em Espera"
-estado_joomla: não publicado
+estado: não publicado
 criado: 2020-04-10
 atualizado: 2020-04-11
-joomlaId: 205
 ---
 **Tipologia:** Saude
 

@@ -1,7 +1,7 @@
 # Sito Hospital Divina Providência
 
 Sito statico (HTML + CSS, **nessun JavaScript, nessun database**) generato con [Astro](https://astro.build) 7.4.
-Sostituisce il vecchio Joomla 3 (`www7`). I contenuti sono file Markdown in portoghese.
+I contenuti sono file Markdown in portoghese.
 
 ## Comandi
 
@@ -46,14 +46,20 @@ Testo in **Markdown**…
 
 **Immagini:** mettile in `src/assets/img/` e richiamale con un percorso relativo, es. `![Descrição](../../assets/img/foto.jpg)`. Al build vengono ridimensionate e convertite in WebP.
 
+## Anteprima su GitHub Pages
+
+A ogni push su `main`, `.github/workflows/pages.yml` pubblica un'anteprima su https://danielegobbo.github.io/hdp-www/
+(in GitHub: *Settings → Pages → Source: GitHub Actions*). Il build usa `BASE_PATH=/hdp-www`, che aggiunge il prefisso
+ai link interni (vedi `astro.config.mjs`). Su Pages il file `.htaccess` non ha effetto: redirect e cache valgono solo sul cPanel.
+
 ## Pubblicazione su cPanel (`hospit5`)
 
 1. `npm run build`
 2. Carica **il contenuto** di `dist/` (incluso il file nascosto `.htaccess`) nella cartella del dominio, tramite File Manager di cPanel o FTP.
-3. Prima di caricare, fai un backup della cartella attuale e **rimuovi i file del vecchio Joomla** da quella cartella.
+3. Prima di caricare, fai un backup della cartella attuale e **rimuovi i file del sito precedente** da quella cartella.
 
-`.htaccess` (generato da `node scripts/gen-htaccess.mjs`) contiene:
-- redirect 301 dai vecchi URL Joomla (`/index.php/...`, `?option=com_content&id=...`) alle nuove pagine
+`public/.htaccess` (si modifica a mano) contiene:
+- redirect 301 dai vecchi indirizzi (`/index.php/...`, `?option=com_content&id=...`) alle nuove pagine
 - pagina 404, compressione, cache delle risorse, alcune intestazioni di sicurezza
 - il blocco per forzare HTTPS, commentato: attivalo se il dominio ha il certificato SSL
 
@@ -69,10 +75,5 @@ src/pages/             home, contactos, 404 e il modello delle pagine ([...slug]
 src/layouts/Base.astro intestazione, menu, piè di pagina
 public/                file copiati così come sono (favicon, .htaccess)
 arquivo/               contenuti del vecchio sito NON pubblicati (COVID 2020, notizie, progetti, Concept Note…)
-scripts/               migrazione da Joomla (già eseguita) e generazione di .htaccess
+scripts/               gen-favicon.mjs (icone dal logo), trim-images.mjs (toglie i bordi bianchi dalle foto in src/assets/img/)
 ```
-
-## Migrazione da Joomla (già fatta)
-
-`npm run migrate` rigenera `src/content/paginas/`, `src/assets/img/` e `arquivo/` dall'export del DB di www7
-(`../local-www7/export/`). **Sovrascrive le modifiche manuali**: non rilanciarlo dopo aver iniziato a modificare i contenuti.

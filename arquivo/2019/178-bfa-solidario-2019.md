@@ -1,10 +1,9 @@
 ---
 title: "BFA-Solidário (2019)"
 categoria: "2019"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-06
 atualizado: 2020-04-06
-joomlaId: 178
 ---
 Redução doenças hospitalares nas crianças internadas.
 

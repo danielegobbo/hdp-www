@@ -1,10 +1,9 @@
 ---
 title: "Necessidades - Materiais e Equipamentos"
 categoria: "Necessidades"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-06
 atualizado: 2020-05-08
-joomlaId: 214
 ---
 Materiais e Equipamentos
 

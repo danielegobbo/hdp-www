@@ -1,9 +1,8 @@
 ---
 title: "Consultas de especialidade"
 categoria: "HDP"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-01
 atualizado: 2020-04-01
-joomlaId: 106
 ---
 

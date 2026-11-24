@@ -1,10 +1,9 @@
 ---
 title: "Equipamentos para produção hipoclorito de sodio"
 categoria: "Doações"
-estado_joomla: não publicado
+estado: não publicado
 criado: 2020-04-03
 atualizado: 2020-04-30
-joomlaId: 133
 ---
 O Hospital Divina Providência utiliza um dispositivo para a produção de hipoclorito de sódio, doado por uma associação italiana através dos Educadores sem fronteiras.
 

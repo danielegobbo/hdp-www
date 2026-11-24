@@ -1,10 +1,9 @@
 ---
 title: "ENI Formação – 3º ciclo (2018)"
 categoria: "2018"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-06
 atualizado: 2020-04-06
-joomlaId: 188
 ---
 Melhorar o sistema de saúde e os serviços médicos e de enfermagem para a população materno-infantil do Distrito de Saúde do Kilamba Kiaxi através de um programa de formações.
 

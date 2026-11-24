@@ -4,11 +4,10 @@ title: "Patrocinadores"
 section: como-colaborar
 order: 2
 atualizado: 2020-04-19
-joomlaId: 218
 ---
 [![logo bolsa solidariedade social](../../../assets/img/patrocinadores/logo_bolsa_solidariedade_social.jpg)](https://www.facebook.com/Bolsa-de-Solidariedade-Social-Angola-487783584917240/)
 
-[Bolsa de Solidariedade Socia](https://www.facebook.com/Bolsa-de-Solidariedade-Social-Angola-487783584917240/)l, um presente para o futuro.
+[Bolsa de Solidariedade Social](https://www.facebook.com/Bolsa-de-Solidariedade-Social-Angola-487783584917240/), um presente para o futuro.
 
 Juntos Somos Angola!
 
@@ -30,10 +29,7 @@ A [FUNDAÇÃO PROSPERAR](https://www.facebook.com/FundacaoProsperar/) é uma ins
 
 A [LudiMed](https://ludimed.com/) é uma empresa sediada em Angola, especializada em importação e distribuição de medicamentos, consumíveis e dispositivos médicos.
 
-Temos como linhas estrategicas, desenvolver, contribuir e fornecer soluções para um maior acesso a medicamentos, produtos hospitalares e areas relacionadas com a saúde.
+Tem como linhas estratégicas, desenvolver, contribuir e fornecer soluções para um maior acesso a medicamentos, produtos hospitalares e áreas relacionadas com a saúde.
 
-E com tal, garantir o direito a uma vida melhor para todos os cidadãos.
+E, com isso, garantir o direito a uma vida melhor para todos os cidadãos.
 
-* * *
-
-* * *

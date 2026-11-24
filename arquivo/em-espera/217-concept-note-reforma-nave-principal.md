@@ -1,10 +1,9 @@
 ---
 title: "Concept Note - Reforma Nave Principal"
 categoria: "Em Espera"
-estado_joomla: não publicado
+estado: não publicado
 criado: 2020-04-10
 atualizado: 2020-04-19
-joomlaId: 217
 ---
 **Tipologia:** Saude
 

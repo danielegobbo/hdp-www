@@ -3,6 +3,10 @@
 export const site = {
   nome: "Hospital Divina Providência",
   sigla: "HDP",
+  // Lingua: portoghese di Angola (ortografia pre-Acordo 1990: direcção, sector, contacto…)
+  idioma: "pt-AO",
+  // Facebook/WhatsApp riconoscono solo pt_PT e pt_BR: pt_PT è il più vicino
+  ogLocale: "pt_PT",
   descricao:
     "Hospital da Obra da Divina Providência em Luanda: urgência 24 horas, internamento, consultas de especialidade e uma rede de centros de saúde no Município de Kilamba Kiaxi.",
   morada: "Avenida Pedro de Castro Van Dunem, S/N, Bairro Golf, Município de Kilamba Kiaxi, Luanda, Angola",
@@ -11,6 +15,8 @@ export const site = {
   email: "geral@hospitaldivinaprovidencia.net",
   horario: [
     { local: "Unidade Central (urgência)", horas: "Todos os dias, 24 horas" },
+    // Fonte: pagina "Convénios" del vecchio sito (2020): da confermare con l'ospedale
+    { local: "Consultas externas e de especialidade", horas: "Segunda a sexta, 7:30 – 14:30" },
     { local: "Postos periféricos", horas: "Segunda a sexta, 7:30 – 15:00" },
   ],
   contactos: [

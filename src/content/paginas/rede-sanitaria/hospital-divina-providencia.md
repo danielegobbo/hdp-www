@@ -5,7 +5,6 @@ section: rede-sanitaria
 order: 1
 image: ../../../assets/img/hdp2.jpg
 atualizado: 2020-04-03
-joomlaId: 126
 ---
 A unidade central compõe-se, na parte da frente, de um pavilhão de 2.000 m2 que acolhe o Departamento Administrativo, o Sector das Consultas Externas (Ambulatórios) e Especializadas, o Serviço de Admissão e o Arquivo Médico-estatístico, o Sector do Diagnóstico e Terapêutico, a Farmácia Interna e a Farmácia Externa, que disponibiliza os medicamentos para os doentes das Consultas Externas. Na parte de trás um pavilhão de 2.100 m2 está destinado ao Sector de Internamento: Pediatria, Medicina, Doenças Infecciosas e Centro Nutricional Terapêutico.
 

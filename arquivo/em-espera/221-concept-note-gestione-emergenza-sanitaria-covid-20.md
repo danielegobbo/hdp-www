@@ -1,10 +1,9 @@
 ---
 title: "Concept Note - Gestione emergenza sanitaria COVID-19"
 categoria: "Em Espera"
-estado_joomla: não publicado
+estado: não publicado
 criado: 2020-04-10
 atualizado: 2020-04-20
-joomlaId: 221
 ---
 **Tipologia:** Salute
 

@@ -1,10 +1,9 @@
 ---
 title: "Fundação Cariverona Comunitário (2015)"
 categoria: "2015"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-06
 atualizado: 2020-04-06
-joomlaId: 168
 ---
 Intervenção sanitária para a proteção da saúde da população materno infantil a nível comunitário no município de Luanda.
 

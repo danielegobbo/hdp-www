@@ -3,12 +3,17 @@ slug: servicos/endocrinologia
 title: "Endocrinologia"
 section: servicos
 image: ../../../assets/img/consultas-especialidades/rins.png
-fonte: "Wikipédia (CC BY-SA 4.0)"
-atualizado: 2020-04-08
-joomlaId: 119
+description: "Consulta de Endocrinologia no Hospital Divina Providência: diabetes, tiróide, obesidade e outras doenças hormonais."
+atualizado: 2026-11-24
 ---
-**Endocrinologia** é uma especialidade [médica](https://pt.wikipedia.org/wiki/Medicina) que estuda as ordens do [sistema endócrino](https://pt.wikipedia.org/wiki/Sistema_end%C3%B3crino) e suas secreções específicas, chamadas de secreções fisiológicas.
+A Endocrinologia trata as doenças das **glândulas que produzem hormonas** e do metabolismo: a diabetes, as doenças da tiróide, a obesidade e as alterações hormonais.
 
-As principais áreas de atuação do especialista, que é denominado endocrinologista, são o tratamento de: diabetes, [obesidade](https://pt.wikipedia.org/wiki/Obesidade_m%C3%B3rbida), doenças da tireoide, desordens da glândula [hipófise](https://pt.wikipedia.org/wiki/Hip%C3%B3fise), distúrbios da menstruação, entre outros.
+## Quando marcar uma consulta
 
-A endocrinologia possui vários ramos de estudo, como a neuroendocrinologia, tireoide, obesidade e diabetes, adrenais, endocrinologia feminina e masculina, metabolismo dos carboidratos, lipídios e proteínas, [tumores neuroendócrinos](https://pt.wikipedia.org/wiki/Tumores_neuroend%C3%B3crinos) e síndromes poliglandulares.
+- Diabetes, ou suspeita de diabetes (muita sede, urinar muitas vezes, emagrecer sem razão)
+- Inchaço no pescoço (bócio) ou outras doenças da tiróide
+- Excesso de peso difícil de controlar
+- Cansaço, alterações de peso ou do ciclo menstrual sem causa conhecida
+- Colesterol elevado
+
+Em caso de dor forte, febre alta, dificuldade em respirar ou acidente, não espere pela consulta: dirija-se à **Urgência**.

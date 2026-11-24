@@ -1,10 +1,9 @@
 ---
 title: "COVID-19 - Alertas"
 categoria: "COVID-19"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-03-28
 atualizado: 2020-04-17
-joomlaId: 212
 ---
 ***Comunicação da OMS***
 

@@ -20,7 +20,8 @@ const subpaginas = filhas(todas, d.slug);
 const secao = mae ?? pagina;
 const navLateral = [secao, ...filhas(todas, secao.data.slug)];
 const isEspecialidade = d.section === "servicos";
-const fmt = new Intl.DateTimeFormat("pt-PT", { month: "long", year: "numeric" });
+const consultas = site.horario.find((h) => h.local.startsWith("Consultas")) ?? site.horario[0];
+const fmt = new Intl.DateTimeFormat(site.idioma, { month: "long", year: "numeric" });
 const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
 ---
 <Base title={d.title} description={d.description ?? (resumo(pagina) || undefined)}>
@@ -48,6 +49,19 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
           <Content />
         </div>
 
+        {isEspecialidade && (
+          <section class="marcar" aria-labelledby="marcar-titulo">
+            <span class="eyebrow">Consulta de {d.title}</span>
+            <h2 id="marcar-titulo">Como marcar uma consulta</h2>
+            <ol>
+              <li>Ligue para o Atendimento, <a href={tel(site.telefone)}>{site.telefone}</a>, ou dirija-se à Admissão da Unidade Central.</li>
+              <li>Pergunte em que dias está disponível a consulta de {d.title}.</li>
+              <li>No dia marcado traga o seu documento de identificação e, se tiver, exames e receitas anteriores.</li>
+            </ol>
+            <p class="marcar-horario"><strong>{consultas.local}:</strong> {consultas.horas.toLowerCase()}.</p>
+          </section>
+        )}
+
         {subpaginas.length > 0 && (
           <section class="subsection">
             <span class="eyebrow">{d.title}</span>
@@ -59,7 +73,7 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
         {(d.fonte || d.atualizado) && (
           <p class="meta">
             {d.fonte && <>Texto: {d.fonte}. </>}
-            {d.atualizado && <>Última atualização do conteúdo: {fmt.format(d.atualizado)}.</>}
+            {d.atualizado && <>Última actualização do conteúdo: {fmt.format(d.atualizado)}.</>}
           </p>
         )}
       </article>

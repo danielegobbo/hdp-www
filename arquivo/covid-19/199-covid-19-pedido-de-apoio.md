@@ -1,10 +1,9 @@
 ---
 title: "COVID-19 - Pedido de Apoio"
 categoria: "COVID-19"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-03-28
 atualizado: 2020-04-10
-joomlaId: 199
 ---
 Considerando que o Hospital devido as fortes restrições da medida vai passar por necessidades de várias ordens entre elas as mais preocupantes e urgentes são:
 

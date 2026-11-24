@@ -1,10 +1,9 @@
 ---
 title: "Consultas de Especialidades"
 categoria: "Consultas de Especialidades"
-estado_joomla: publicado
+estado: publicado
 criado: 2019-04-18
 atualizado: 2020-04-04
-joomlaId: 96
 ---
 Ecografia
 

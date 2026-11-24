@@ -1,10 +1,9 @@
 ---
 title: "Doação papas multimisturas"
 categoria: "Doações"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-04-03
 atualizado: 2020-04-30
-joomlaId: 134
 ---
 <table><tbody><tr><td><img src="images/hdp/images/patrocinadores/logo_fundacao_prosperar.jpg" alt="logo fundacao prosperar"></td><td><p><img src="images/hdp/images/patrocinadores/logo_caritas_de_angola.png" alt="logo caritas de angola"></p></td><td><img src="images/hdp/images/patrocinadores/logo_bolsa_solidariedade_social.jpg" alt="logo bolsa solidariedade social"></td></tr></tbody></table>
 

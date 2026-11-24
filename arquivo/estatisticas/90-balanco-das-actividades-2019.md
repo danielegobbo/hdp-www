@@ -1,10 +1,9 @@
 ---
 title: "Blanço das actividades de 2019"
 categoria: "Estatisticas"
-estado_joomla: publicado
+estado: publicado
 criado: 2020-03-29
 atualizado: 2020-04-30
-joomlaId: 90
 ---
 **CONSULTAS EXTERNAS (Primeira Consulta e Retorno)**
 
