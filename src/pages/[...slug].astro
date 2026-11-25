@@ -22,6 +22,7 @@ const mae = d.section ? todas.find((p) => p.data.slug === d.section) : undefined
 const subpaginas = filhas(todas, d.slug);
 const secao = mae ?? pagina;
 const navLateral = [secao, ...filhas(todas, secao.data.slug)];
+const isRedeSanitaria = d.slug === "rede-sanitaria";
 const isEspecialidade = d.section === "servicos";
 const consultas = site.horario.find((h) => h.local.startsWith("Consultas")) ?? site.horario[0];
 const fmt = new Intl.DateTimeFormat(site.idioma, { month: "long", year: "numeric" });
@@ -52,7 +53,7 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
           <Content />
         </div>
 
-        {d.slug === "rede-sanitaria" && (
+        {isRedeSanitaria && (
           <>
             <MapaRedeSanitaria />
             <EsquemaRedeSanitaria />
@@ -73,10 +74,10 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
         )}
 
         {subpaginas.length > 0 && (
-          <section class="subsection">
+          <section class:list={["subsection", { "subsection-rede": isRedeSanitaria }]}>
             <span class="eyebrow">{d.title}</span>
             <h2>{d.slug === "servicos" ? "Consultas de especialidade" : "Nesta secção"}</h2>
-            <Cards paginas={subpaginas} conteudo={d.slug === "servicos"} />
+            <Cards paginas={subpaginas} conteudo={d.slug === "servicos"} colunas={isRedeSanitaria ? 3 : undefined} />
           </section>
         )}
 
@@ -111,3 +112,9 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
     {d.slug === "quem-somos" && <Organigramas />}
   </div>
 </Base>
+
+<style>
+  .subsection-rede :global(.cards > .card:first-child) {
+    grid-column: 1 / -1;
+  }
+</style>
