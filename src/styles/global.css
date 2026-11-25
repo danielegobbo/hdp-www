@@ -166,16 +166,36 @@ main { overflow: hidden; }
 @media (min-width: 1080px) { .cards-3 { grid-template-columns: repeat(3, 1fr); } }
 .card .thumb { background: var(--carta); border: 1px solid #38271e22; }
 .card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-/* Specialità: icone con fondo bianco "fuse" nella carta */
+/* Pittogrammi delle specialità */
 .cards-icons { grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); }
-.cards-icons .thumb { display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; }
-.cards-icons img { width: 72px; aspect-ratio: auto; object-fit: contain; mix-blend-mode: multiply; }
+.cards-icons .thumb {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(145deg, var(--carta), var(--crema));
+}
+.cards-icons .thumb::before {
+  content: "";
+  grid-area: 1 / 1;
+  width: 94px;
+  aspect-ratio: 1;
+  border: 1px solid var(--oro);
+  border-radius: 50%;
+  background: var(--crema);
+}
+.cards-icons img {
+  grid-area: 1 / 1;
+  width: 84px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  filter: url("#especialidade-cor");
+}
 .cards-icons .card a:hover .thumb { border-color: var(--ambra); }
 .card .body { padding: 14px 0 0; border-top: 0; }
 .card h3 { margin: 0 0 6px; font-size: 1.3rem; }
 .card p { margin: 0; font-size: 14px; color: var(--muted); }
 .card a:hover h3 { color: var(--ambra); }
-.card a:hover img { filter: saturate(1.1) contrast(1.03); }
+.cards:not(.cards-icons) .card a:hover img { filter: saturate(1.1) contrast(1.03); }
 
 /* ---------- Pagine interne ---------- */
 .page { padding: 50px var(--gutter) 85px; }

@@ -4,12 +4,27 @@ import { resumo, type Pagina } from "../lib/paginas";
 
 interface Props {
   paginas: Pagina[];
-  conteudo?: boolean; // icone su fondo bianco (specialità) invece di foto
+  conteudo?: boolean; // icone delle specialità invece di foto
   colunas?: 3 | 4;
   imagens?: boolean; // false = solo titolo e testo, senza immagine
 }
 const { paginas, conteudo = false, colunas, imagens = true } = Astro.props;
 ---
+{conteudo && (
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position: absolute">
+    <defs>
+      <filter id="especialidade-cor" color-interpolation-filters="sRGB">
+        <!-- Converte il grigio in opacità e rende trasparente lo sfondo bianco. -->
+        <feColorMatrix type="matrix" result="traco" values="0 0 0 0 0
+                                            0 0 0 0 0
+                                            0 0 0 0 0
+                                            -0.6378 -2.1456 -0.2166 2.9 0" />
+        <feFlood flood-color="var(--marrone)" />
+        <feComposite in2="traco" operator="in" />
+      </filter>
+    </defs>
+  </svg>
+)}
 <ul class:list={["cards", { "cards-icons": conteudo, "cards-3": colunas === 3 }]}>
   {paginas.map((p) => (
     <li class="card">
