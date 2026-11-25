@@ -4,9 +4,9 @@ title: "Centro Médico São Marcos"
 section: rede-sanitaria
 order: 3
 image: ../../../assets/img/sm2.jpg
-atualizado: 2020-04-03
+atualizado: 2026-11-25
 ---
-O Centro Medico São Marcos desde sempre visaram principalmente à atenção primária, considerando como ponto estratégico o desenvolvimento de prestações a nível de centros de saúde periféricos, nas áreas mais carentes de cuidados médicos.
+O Centro Médico São Marcos desde sempre visou principalmente à atenção primária, considerando como ponto estratégico o desenvolvimento de prestações a nível de centros de saúde periféricos, nas áreas mais carentes de cuidados médicos.
 
 **Serviços**
 

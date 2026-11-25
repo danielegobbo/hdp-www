@@ -4,9 +4,9 @@ title: "Centro Médico São João Calábria"
 section: rede-sanitaria
 order: 2
 image: ../../../assets/img/sjc2.jpg
-atualizado: 2020-04-03
+atualizado: 2026-11-25
 ---
-As acções sanitárias do Centro Medico São João Calabria desde sempre visaram principalmente à Atenção Primária, considerando como ponto estratégico o desenvolvimento de prestações a nível de Centros de Saúde periféricos, nas áreas mais carentes de cuidados médicos.
+As acções sanitárias do Centro Médico São João Calábria desde sempre visaram principalmente à Atenção Primária, considerando como ponto estratégico o desenvolvimento de prestações a nível de Centros de Saúde periféricos, nas áreas mais carentes de cuidados médicos.
 
 **Serviços**
 

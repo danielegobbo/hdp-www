@@ -3,17 +3,17 @@ slug: rede-sanitaria/descentralizacao
 title: "A descentralização dos serviços"
 section: rede-sanitaria
 order: 0
-atualizado: 2020-04-30
+atualizado: 2026-11-25
 ---
-Aa rede sanitária do **HDP** é constituída por 5 centros periféricos de saúde e una unidade central.
+A rede sanitária do **HDP** é constituída por 5 centros periféricos de saúde e uma unidade central.
 
 **Centros Periféricos de Saúde:**
 
-1) São João Calabria (SJC), Laboratório, Farmácia
+1) São João Calábria (SJC), Laboratório, Farmácia
 
 2) Nossa Senhora da Paz (NSP), Laboratório, Farmácia
 
-3) Santa Caterina (SC)
+3) Santa Catarina (SC)
 
 4) Santa Teresinha (ST), fechado por falta de recursos e pessoal.
 
@@ -23,18 +23,18 @@ Aa rede sanitária do **HDP** é constituída por 5 centros periféricos de saú
 
 Ø146 camas (60 Pediatria, 61 Medicina e TB/HIV, 25 CNT);
 
-Ø1 Centro de Doenças Infeciosas HIV/AIDS e Tuberculose;
+Ø1 Centro de Doenças Infecciosas HIV/SIDA e Tuberculose;
 
 Ø1 Centro Nutricional Terapêutico e de Seguimento;
 
 Ø11 Consultas de especialidade;
 
-Ø1 Laboratório Analises;
+Ø1 Laboratório de Análises;
 
 Ø1 Farmácia;
 
 Ø1 Imagiologia (RX, Ecografia, Eco-cardiografia);
 
-![](../../../assets/img/extraidas/88-1.png)
+![Mapa do Município de Kilamba Kiaxi com a localização dos centros de saúde da rede](../../../assets/img/extraidas/88-1.png)
 
-![](../../../assets/img/extraidas/88-2.png)
+![Esquema da rede sanitária: a Unidade Central, os seus serviços e as unidades periféricas](../../../assets/img/extraidas/88-2.png)

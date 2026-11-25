@@ -3,7 +3,7 @@ slug: quem-somos/as-estruturas
 title: "As Estruturas"
 section: quem-somos
 order: 1
-atualizado: 2020-05-07
+atualizado: 2026-11-25
 ---
 **Estrutura da Unidade Central**
 
@@ -13,13 +13,13 @@ O Município de Kilamba Kiaxi conta com uma população estimada de cerca 700.00
 
 Juntamente ao Hospital Municipal de Kilamba Kiaxi, o Hospital Divina Providência outorga serviços sanitários previstos no “Pacote Mínimo de Serviços” contemplado no DL n. 54/03, com particular cuidado aos serviços preventivos e curativos de Atenção Primária, dando assim cobertura à Área de Saúde de competência (1 Hospital Municipal cada 500.000 habitantes). Neste contexto, o Hospital faz parte da rede Sanitária do Serviço Nacional de Saúde em força de um acordo operativo assinado com a Direcção Provincial de Saúde de Luanda ao 03 de Fevereiro de 1997.
 
-![hdp2](../../../assets/img/hdp2.jpg)
+![Utentes à espera nos guichés de marcação de consultas da Unidade Central](../../../assets/img/hdp2.jpg)
 
 -   146 camas (60 Pediatria, 61 Medicina e TB/HIV, 25 CNT);
--   1 Centro de Doenças Infeciosas HIV/AIDS e Tuberculose;
+-   1 Centro de Doenças Infecciosas HIV/SIDA e Tuberculose;
 -   1 Centro Nutricional Terapêutico e de Seguimento;
 -   11 Consultas de especialidade;
--   1 Laboratório Analises;
+-   1 Laboratório de Análises;
 -   1 Farmácia;
 -   1 Imagiologia (RX, Ecografia, Eco-cardiografia);
 
@@ -68,4 +68,4 @@ A Rede Periférica do Hospital Divina Providência é constituída por um Centro
 -   Farmácia
 -   Malnutrição
 
-![sm2](../../../assets/img/sm2.jpg)
+![Sala de espera do Centro Médico São Marcos](../../../assets/img/sm2.jpg)

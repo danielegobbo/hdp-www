@@ -4,9 +4,9 @@ title: "Posto Médico Santa Catarina"
 section: rede-sanitaria
 order: 5
 image: ../../../assets/img/sc1.jpg
-atualizado: 2020-04-03
+atualizado: 2026-11-25
 ---
-As acções sanitárias do Centro Medico Santa Catarina desde sempre visaram principalmente à Atenção Primária, considerando como ponto estratégico o desenvolvimento de prestações a nível de Centros de Saúde periféricos, nas áreas mais carentes de cuidados médicos.
+As acções sanitárias do Centro Médico Santa Catarina desde sempre visaram principalmente à Atenção Primária, considerando como ponto estratégico o desenvolvimento de prestações a nível de Centros de Saúde periféricos, nas áreas mais carentes de cuidados médicos.
 
 **Serviços**
 

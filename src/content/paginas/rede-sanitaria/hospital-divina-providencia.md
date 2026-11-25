@@ -4,7 +4,7 @@ title: "Hospital Divina Providência"
 section: rede-sanitaria
 order: 1
 image: ../../../assets/img/hdp2.jpg
-atualizado: 2020-04-03
+atualizado: 2026-11-25
 ---
 A unidade central compõe-se, na parte da frente, de um pavilhão de 2.000 m2 que acolhe o Departamento Administrativo, o Sector das Consultas Externas (Ambulatórios) e Especializadas, o Serviço de Admissão e o Arquivo Médico-estatístico, o Sector do Diagnóstico e Terapêutico, a Farmácia Interna e a Farmácia Externa, que disponibiliza os medicamentos para os doentes das Consultas Externas. Na parte de trás um pavilhão de 2.100 m2 está destinado ao Sector de Internamento: Pediatria, Medicina, Doenças Infecciosas e Centro Nutricional Terapêutico.
 
@@ -16,12 +16,12 @@ Juntamente ao Hospital Municipal de Kilamba Kiaxi, o Hospital Divina Providênci
 -   Internamento Medicina (40 camas)
 -   Internamento HIV/TB (20 camas)
 -   Internamento malnutrição severa (27 camas)
--   1 Centro de Doenças Infeciosas para HIV/AIDS
--   1 Centro de Doenças Infeciosas para Tuberculose;
+-   1 Centro de Doenças Infecciosas para HIV/SIDA
+-   1 Centro de Doenças Infecciosas para Tuberculose;
 -   1 Centro Nutricional Terapêutico
 -   1 Centro Nutricional de Seguimento;
 -   11 Consultas de especialidade;
--   1 Laboratório Analises;
+-   1 Laboratório de Análises;
 -   1 Farmácia;
 -   1 Imagiologia (RX, Ecografia, Eco-cardiografia, ECG);
 

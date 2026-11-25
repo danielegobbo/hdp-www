@@ -17,7 +17,7 @@ export const site = {
     { local: "Unidade Central (urgência)", horas: "Todos os dias, 24 horas" },
     // Fonte: pagina "Convénios" del vecchio sito (2020): da confermare con l'ospedale
     { local: "Consultas externas e de especialidade", horas: "Segunda a sexta, 7:30 – 14:30" },
-    { local: "Postos periféricos", horas: "Segunda a sexta, 7:30 – 15:00" },
+    { local: "Postos periféricos", horas: "Segunda a sexta, 7:30 – 14:30" },
   ],
   contactos: [
     { nome: "Atendimento e Secretaria Geral", telefone: "+244 916 025 301", email: "geral@hospitaldivinaprovidencia.net" },
