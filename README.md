@@ -1,6 +1,6 @@
 # Sito Hospital Divina Providência
 
-Sito statico (HTML + CSS, **nessun JavaScript, nessun database**) generato con [Astro](https://astro.build) 7.4.
+Sito statico generato con [Astro](https://astro.build) 7.4, senza database. La pagina Rede Sanitária usa Leaflet per la mappa interattiva OpenStreetMap e mostra una mappa storica se quella interattiva non è disponibile.
 I contenuti sono file Markdown in portoghese.
 
 ## Comandi

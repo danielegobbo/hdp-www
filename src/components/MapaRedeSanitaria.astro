@@ -1,0 +1,196 @@
+---
+import { Image } from "astro:assets";
+import "leaflet/dist/leaflet.css";
+import mapaHistorico from "../assets/img/mapas/mapa_rede_sanitaria_hdp_800x502.jpg";
+import { unidadeCentral, unidadesDaRede } from "../data/rede-sanitaria";
+
+const [lat, lon] = unidadeCentral.posicao;
+const osmUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=18/${lat}/${lon}`;
+---
+<section class="mapa-rede" aria-labelledby="mapa-rede-titulo" data-unidades={JSON.stringify(unidadesDaRede)}>
+  <h2 id="mapa-rede-titulo">Mapa da rede sanitária</h2>
+  <div class="mapa-quadro">
+    <div class="mapa-area">
+      <Image src={mapaHistorico} alt="Mapa histórico com as seis unidades da rede sanitária de Luanda" widths={[480, 800]} sizes="(min-width: 980px) 50vw, 88vw" class="mapa-historico" />
+      <div class="mapa-canvas" role="region" aria-label="Mapa interactivo da rede sanitária de Luanda" aria-hidden="true"></div>
+    </div>
+    <div class="mapa-comandos" hidden>
+      <button type="button" class="vista-rede">Ver toda a rede</button>
+      {unidadesDaRede.map(({ nome, abreviatura, encerrada }, i) => (
+        <button type="button" data-unidade={i} class:list={[{ central: i === 0, encerrada }]}>
+          <span aria-hidden="true">{abreviatura}</span>
+          {i === 0 ? "Unidade Central" : nome}
+          {encerrada && <small>Encerrado</small>}
+        </button>
+      ))}
+    </div>
+    <div class="mapa-notas">
+      <p>As localizações das unidades periféricas são aproximadas.</p>
+      <a href={osmUrl}>Ver a Unidade Central no OpenStreetMap</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  import type { UnidadeDaRede } from "../data/rede-sanitaria";
+
+  async function iniciarMapa(secao: HTMLElement) {
+    const canvas = secao.querySelector<HTMLElement>(".mapa-canvas")!;
+    const comandos = secao.querySelector<HTMLElement>(".mapa-comandos")!;
+    const imagem = secao.querySelector<HTMLElement>(".mapa-historico")!;
+    const unidades = JSON.parse(secao.dataset.unidades!) as UnidadeDaRede[];
+    const L = await import("leaflet");
+    const reduzirMovimento = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const mapa = L.map(canvas, { scrollWheelZoom: false, zoomControl: false, zoomSnap: 0.25 });
+    const limites = L.latLngBounds(unidades.map(({ posicao }) => posicao));
+    const vistaRede = { padding: L.point(21, 22), maxZoom: 15 };
+    L.control.zoom({ zoomInTitle: "Ampliar", zoomOutTitle: "Reduzir" }).addTo(mapa);
+    L.control.scale({ imperial: false }).addTo(mapa);
+
+    function enquadrarRede(animar: boolean) {
+      mapa.closePopup();
+      if (animar && !reduzirMovimento.matches) {
+        mapa.flyToBounds(limites, { ...vistaRede, duration: 1.25 });
+      } else {
+        mapa.fitBounds(limites, { ...vistaRede, animate: false });
+      }
+    }
+
+    const marcadores = unidades.map(({ nome, abreviatura, posicao, slug, encerrada }, i) => {
+      const central = i === 0;
+      const popup = document.createElement("div");
+      const link = document.createElement("a");
+      link.href = new URL(`./${slug}/`, location.href).href;
+      link.textContent = nome;
+      const nota = document.createElement("p");
+      nota.textContent = central ? "Unidade Central" : encerrada ? "Encerrado · Localização aproximada" : "Localização aproximada";
+      popup.append(link, nota);
+      return L.marker(posicao, {
+        title: encerrada ? `${nome} (encerrado)` : nome,
+        zIndexOffset: central ? 1000 : 0,
+        icon: L.divIcon({
+          className: `mapa-marcador${central ? " central" : ""}${encerrada ? " encerrada" : ""}`,
+          html: abreviatura,
+          iconSize: [38, 32],
+          iconAnchor: [19, 16],
+          popupAnchor: [0, -14],
+        }),
+      }).addTo(mapa).bindPopup(popup);
+    });
+
+    comandos.querySelector(".vista-rede")!.addEventListener("click", () => enquadrarRede(true));
+    for (const botao of comandos.querySelectorAll<HTMLButtonElement>("[data-unidade]")) {
+      botao.addEventListener("click", () => {
+        const i = Number(botao.dataset.unidade);
+        const posicao = unidades[i].posicao;
+        const zoom = i === 0 ? 18 : 15;
+        mapa.closePopup();
+        if (reduzirMovimento.matches) {
+          mapa.setView(posicao, zoom, { animate: false });
+          marcadores[i].openPopup();
+        } else if (mapa.getCenter().equals(posicao) && mapa.getZoom() === zoom) {
+          marcadores[i].openPopup();
+        } else {
+          // O pop-up abre só após o voo e apenas se a vista chegar à unidade.
+          mapa.once("moveend", () => {
+            if (mapa.getCenter().equals(posicao) && mapa.getZoom() === zoom) marcadores[i].openPopup();
+          });
+          mapa.flyTo(posicao, zoom, { duration: 1.15 });
+        }
+      });
+    }
+
+    if (reduzirMovimento.matches) {
+      enquadrarRede(false);
+    } else {
+      const zoomInicial = Math.max(8, mapa.getBoundsZoom(limites, false, vistaRede.padding.multiplyBy(2)) - 1);
+      mapa.setView(limites.getCenter(), zoomInicial);
+    }
+
+    const mosaicos = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    });
+    mosaicos.once("tileload", () => {
+      canvas.removeAttribute("aria-hidden");
+      canvas.classList.add("mapa-activo");
+      imagem.hidden = true;
+      comandos.hidden = false;
+      enquadrarRede(true);
+    });
+    mosaicos.addTo(mapa);
+  }
+
+  const secao = document.querySelector<HTMLElement>(".mapa-rede");
+  if (secao) {
+    const observador = new IntersectionObserver((entradas) => {
+      if (!entradas.some(({ isIntersecting }) => isIntersecting)) return;
+      observador.disconnect();
+      // A imagem histórica e o link continuam acessíveis se o mapa falhar.
+      void iniciarMapa(secao).catch((erro) => console.error("Mapa da rede sanitária:", erro));
+    }, { threshold: 0.15 });
+    observador.observe(secao.querySelector(".mapa-area")!);
+  }
+</script>
+
+<style>
+  .mapa-rede { margin-block: 1.5rem 2.5rem; container-type: inline-size; }
+  h2 { font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.2rem); }
+  .mapa-quadro { border: 1px solid var(--beige); border-radius: .75rem; background: var(--carta); }
+  .mapa-area {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    min-height: 17rem;
+    max-height: 34rem;
+    overflow: hidden;
+    border-radius: .7rem .7rem 0 0;
+    background: var(--crema);
+  }
+  .mapa-historico { width: 100%; height: 100%; object-fit: contain; }
+  .mapa-historico[hidden] { display: none; }
+  .mapa-canvas { position: absolute; inset: 0; visibility: hidden; background: var(--crema); }
+  .mapa-activo { visibility: visible; }
+  .mapa-comandos { display: flex; flex-wrap: wrap; gap: .45rem; padding: .8rem .8rem 0; }
+  .mapa-comandos[hidden] { display: none; }
+  button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .35rem;
+    min-height: 2.5rem;
+    padding: .35rem .55rem;
+    border: 1px solid var(--beige);
+    border-radius: .35rem;
+    background: var(--crema);
+    color: var(--marrone);
+    text-align: left;
+    font: .875rem/1.25 var(--sans);
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--ambra); }
+  button:focus-visible { outline: 2px solid var(--ambra); outline-offset: 2px; }
+  button span { padding: .2rem .3rem; border-radius: .25rem; background: var(--oro); font-weight: bold; }
+  .central span { background: var(--marrone); color: var(--carta); }
+  .encerrada span { background: var(--muted); color: var(--carta); }
+  button small { font-size: .8rem; font-weight: bold; }
+  .mapa-notas { display: flex; flex-wrap: wrap; gap: .3rem 1rem; padding: .75rem .8rem; font-size: .875rem; }
+  .mapa-notas p { margin: 0; color: var(--muted); }
+  .mapa-canvas :global(.mapa-marcador) {
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--carta);
+    border-radius: .5rem;
+    background: var(--oro);
+    color: var(--marrone);
+    box-shadow: 0 1px 4px #38271e66;
+    font: bold .75rem/1 var(--sans);
+  }
+  .mapa-canvas :global(.mapa-marcador.central) { background: var(--marrone); color: var(--carta); }
+  .mapa-canvas :global(.mapa-marcador.encerrada) { background: var(--muted); color: var(--carta); border-style: dashed; }
+  .mapa-canvas :global(.leaflet-popup-content-wrapper),
+  .mapa-canvas :global(.leaflet-popup-tip) { background: var(--carta); color: var(--marrone); }
+  .mapa-canvas :global(.leaflet-popup-content a) { font-weight: bold; color: var(--marrone); }
+  .mapa-canvas :global(.leaflet-popup-content p) { margin: .35rem 0 0; }
+</style>
