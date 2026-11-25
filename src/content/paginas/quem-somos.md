@@ -22,7 +22,3 @@ O Município de Kilamba Kiaxi conta com uma população estimada em 700.000 habi
 Na Unidade Central existem quatro tipologias de internamentos: Pediatria (60 camas), Medicina Geral (40 camas), infecciologia (20 camas), Malnutrição Severa (27 camas), perfazendo um total de 147 camas disponíveis 24/24, 7/7. O atendimento nas Unidades Periféricas é apenas diurno.
 
 Juntamente ao Hospital Municipal de Kilamba Kiaxi, o HDP conta com os serviços sanitários previstos no “Pacote Mínimo de Serviços” contemplado no DL n. 54/03, com particular cuidado aos serviços preventivos e curativos de Atenção Primária, dando assim cobertura à Área de Saúde de competência. Neste contexto, o Hospital faz parte da rede Sanitária do Serviço Nacional de Saúde em força de um acordo operativo assinado com a Direcção Provincial de Saúde de Luanda ao 03 de Fevereiro de 1997.
-
-![Organigrama do HDP: Conselho de Administração, Director Geral e as direcções Clínica, de Enfermagem e Administrativa](../../assets/img/extraidas/73-1.png)
-
-![Organigrama completo do Hospital Divina Providência, com os departamentos de cada direcção](../../assets/img/extraidas/73-2.png)

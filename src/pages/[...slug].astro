@@ -3,6 +3,7 @@ import { render } from "astro:content";
 import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import Cards from "../components/Cards.astro";
+import Organigramas from "../components/Organigramas.astro";
 import { todasPaginas, filhas, resumo } from "../lib/paginas";
 import { site } from "../data/site";
 
@@ -97,5 +98,7 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
         </aside>
       )}
     </div>
+
+    {d.slug === "quem-somos" && <Organigramas />}
   </div>
 </Base>

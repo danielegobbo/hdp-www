@@ -1,0 +1,136 @@
+---
+import { apoio, comissoes, direccoes } from "../data/organigrama";
+import UnidadesOrganigrama from "./UnidadesOrganigrama.astro";
+---
+<section class="organigrama" aria-labelledby="organigrama-geral">
+  <h2 id="organigrama-geral">Organigrama geral</h2>
+  <div class="quadro">
+    <div class="hierarquia">
+      <p class="conselho">Conselho de Administração do HDP</p>
+      <p class="director-geral">Director Geral</p>
+      <ul class="direccoes" aria-label="Direcções subordinadas ao Director Geral">
+        {direccoes.map(({ director, apoio }) => (
+          <li>
+            <div class="direccao">
+              <h3>{director}</h3>
+              <ul class="apoio-direccao">
+                {apoio.map((nome) => <li>{nome}</li>)}
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div class="apoio-geral">
+      <div class="painel">
+        <h3>Apoio à Direcção Geral</h3>
+        <ul>
+          {apoio.map((nome) => <li>{nome}</li>)}
+        </ul>
+      </div>
+      <div class="painel">
+        <h3>Comissões da Direcção Geral</h3>
+        <ul>
+          {comissoes.map((nome) => <li>{nome}</li>)}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="organigrama" aria-labelledby="organigrama-detalhado">
+  <h2 id="organigrama-detalhado">Organigrama detalhado</h2>
+  <p class="instrucao">Abra uma direcção para consultar os seus departamentos e serviços.</p>
+  <div class="detalhes">
+    {direccoes.map(({ nome, unidades }) => (
+      <details>
+        <summary>{nome}</summary>
+        <ul class="departamentos">
+          {unidades.map(({ nome, unidades: servicos }) => (
+            <li class="painel">
+              <h3>{nome}</h3>
+              {!!servicos?.length && <UnidadesOrganigrama unidades={servicos} />}
+            </li>
+          ))}
+        </ul>
+      </details>
+    ))}
+  </div>
+</section>
+
+<style>
+  .organigrama { max-width: 70rem; margin-block-start: 3.5rem; container-type: inline-size; }
+  .organigrama h2 { margin-block: 0 1rem; }
+  .quadro, details { border: 1px solid var(--beige); border-radius: .75rem; background: var(--carta); }
+  .quadro { padding: clamp(1rem, 4vw, 2.25rem); }
+  .hierarquia { display: grid; justify-items: center; }
+  .conselho, .director-geral {
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 1.5rem;
+    padding: .65rem 1.15rem;
+    border-radius: .4rem;
+    text-align: center;
+    font: 1.2rem/1.25 var(--serif);
+  }
+  .conselho { border: 1px solid var(--oro); background: var(--crema); }
+  .director-geral { background: var(--marrone); color: var(--carta); }
+  .conselho::after, .director-geral::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: calc(1.5rem + 1px);
+    border-left: 1px solid var(--ambra);
+  }
+  .direccoes, .departamentos { margin: 0; padding: 0; list-style: none; }
+  .direccoes { position: relative; display: grid; width: 100%; max-width: 56rem; }
+  .direccoes > li { position: relative; }
+  .direccoes > li::before, .direccoes > li::after {
+    content: "";
+    position: absolute;
+  }
+  .direccao { height: 100%; padding: .9rem .65rem; border: 1px solid var(--beige); border-top: 3px solid var(--oro); border-radius: .4rem; background: var(--crema); text-align: center; }
+  .direccao h3, .painel h3 { margin: 0; font-size: 1.15rem; }
+  .apoio-direccao { margin: .4rem 0 0; padding: 0; list-style: none; color: var(--muted); font-size: .9rem; }
+  .apoio-geral { display: grid; gap: .8rem; margin-top: 1rem; }
+  .painel { padding: 1rem; border: 1px solid var(--beige); border-radius: .4rem; }
+  .apoio-geral ul { margin: .5rem 0 0; padding-left: 1.1rem; font-size: .9375rem; }
+  .apoio-geral li::marker { color: var(--ambra); }
+  .instrucao { margin: 0 0 1rem; color: var(--muted); }
+  .detalhes { display: grid; gap: .65rem; }
+  summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    padding: .85rem 1rem;
+    border-radius: inherit;
+    cursor: pointer;
+    font: 1.25rem/1.25 var(--serif);
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: ""; flex: none; width: .55rem; height: .55rem; border: solid var(--ambra); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+  details[open] summary::after { transform: rotate(225deg); }
+  summary:hover, details[open] summary { background: var(--crema); }
+  .departamentos { display: grid; gap: .65rem; padding: .85rem; }
+  @container (width < 42rem) {
+    .direccoes { padding-left: 1rem; }
+    .direccoes::before { content: ""; position: absolute; inset: 0 50% auto 0; border-top: 1px solid var(--ambra); }
+    .direccoes > li { padding-block: .45rem; }
+    .direccoes > li::before { inset: 0 auto 0 -1rem; border-left: 1px solid var(--ambra); }
+    .direccoes > li:last-child::before { bottom: 50%; }
+    .direccoes > li::after { inset: 50% 100% auto -1rem; border-top: 1px solid var(--ambra); }
+  }
+  @container (min-width: 42rem) {
+    .direccoes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .direccoes > li { padding: 1.35rem .4rem 0; }
+    .direccoes > li::before { inset: 0 auto auto 50%; height: 1.35rem; border-left: 1px solid var(--ambra); }
+    .direccoes > li::after { inset: 0 0 auto; border-top: 1px solid var(--ambra); }
+    .direccoes > li:first-child::after { left: 50%; }
+    .direccoes > li:last-child::after { right: 50%; }
+    .apoio-geral { grid-template-columns: 1fr 1fr; }
+    .departamentos { grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+  }
+</style>

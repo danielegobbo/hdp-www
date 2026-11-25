@@ -1,0 +1,21 @@
+---
+import type { Unidade } from "../data/organigrama";
+
+interface Props {
+  unidades: Unidade[];
+}
+const { unidades } = Astro.props;
+---
+<ul>
+  {unidades.map(({ nome, unidades: filhas }) => (
+    <li>
+      {nome}
+      {!!filhas?.length && <Astro.self unidades={filhas} />}
+    </li>
+  ))}
+</ul>
+<style>
+  ul { margin: .4rem 0 0; padding: 0 0 0 .85rem; border-inline-start: 1px solid var(--beige); list-style: none; }
+  li { position: relative; margin: .3rem 0; font-size: .9375rem; }
+  li::before { content: ""; position: absolute; inset-inline-start: -.85rem; top: .8em; width: .55rem; border-top: 1px solid var(--beige); }
+</style>
