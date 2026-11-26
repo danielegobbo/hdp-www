@@ -117,4 +117,8 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
   .subsection-rede :global(.cards > .card:first-child) {
     grid-column: 1 / -1;
   }
+
+  .subsection-rede :global(.cards .card a .thumb img) {
+    filter: brightness(1.12) contrast(.97) saturate(1.05);
+  }
 </style>
