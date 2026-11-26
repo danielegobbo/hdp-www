@@ -21,7 +21,7 @@ export const unidadesPerifericas: UnidadeDaRede[] = [
   { nome: "Posto Médico Nossa Senhora da Paz", abreviatura: "NSP", slug: "posto-medico-nossa-senhora-da-paz", posicao: [-8.880599132795126, 13.253043275127462], nota: "Laboratório e farmácia" },
   { nome: "Posto Médico Santa Catarina", abreviatura: "SC", slug: "posto-medico-santa-catarina", posicao: [-8.875285596648588, 13.277176285266185] },
   { nome: "Posto Médico Santa Teresinha", abreviatura: "ST", slug: "posto-medico-santa-terezinha", posicao: [-8.87164302174692, 13.26155238429675], nota: "Encerrado por falta de recursos e pessoal", encerrada: true },
-  { nome: "Centro Médico São Marcos", abreviatura: "SM", slug: "centro-medico-sao-marcos", posicao: [-8.879, 13.293], posicaoAproximada: true, nota: "Laboratório, farmácia e oftalmologia" },
+  { nome: "Centro Médico São Marcos", abreviatura: "SM", slug: "centro-medico-sao-marcos", posicao: [-8.879338459923051, 13.29719267520468], nota: "Laboratório, farmácia e oftalmologia" },
 ];
 
 export const unidadesDaRede = [unidadeCentral, ...unidadesPerifericas];

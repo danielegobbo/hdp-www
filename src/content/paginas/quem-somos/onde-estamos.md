@@ -79,6 +79,8 @@ Município de Kilamba Kiaxi, Sub-zona 7
 
 Município de Kilamba Kiaxi, Kapolo 2, zona Sapú.
 
+[Ver no Google Maps](https://www.google.com/maps/search/?api=1&query=-8.879338459923051%2C13.29719267520468)
+
 </section>
 
 </div>
