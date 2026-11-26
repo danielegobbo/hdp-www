@@ -55,6 +55,8 @@ Município de Kilamba Kiaxi, Golf 2
 
 Município de Kilamba Kiaxi, Palanca
 
+[Ver no Google Maps](https://www.google.com/maps/search/?api=1&query=-8.875285596648588%2C13.277176285266185)
+
 </section>
 
 <section class="local">
