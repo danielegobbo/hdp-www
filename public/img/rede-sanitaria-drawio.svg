@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1138px" height="632px" viewBox="0 0 1138 632">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1179px" height="651px" viewBox="-20 -12 1179 651">
   <title>Rede Sanitária do Hospital Divina Providência</title>
   <desc>Unidade Central e seus serviços, e cinco unidades periféricas, incluindo Santa Teresinha, que está encerrada.</desc>
   <defs />
-  <rect fill="#F5E7CE" width="100%" height="100%" x="0" y="0" />
+  <rect fill="#F5E7CE" width="1179" height="651" x="-20" y="-12" />
   <g>
     <g data-cell-id="0">
       <g data-cell-id="1">
@@ -43,7 +43,7 @@
         </g>
         <g data-cell-id="n3">
           <g transform="translate(0.5,0.5)">
-            <rect x="4" y="191" width="642" height="440" rx="66" ry="66" fill="#fff9ee" stroke="#c4a58e" pointer-events="all" />
+            <rect x="4" y="191" width="642" height="423" rx="12" ry="12" fill="#fff9ee" stroke="#c4a58e" pointer-events="all" />
           </g>
           <g data-cell-id="n5">
             <g transform="translate(0.5,0.5)">
@@ -205,7 +205,7 @@
         </g>
         <g data-cell-id="n4">
           <g transform="translate(0.5,0.5)">
-            <rect x="682" y="191" width="452" height="440" rx="66" ry="66" fill="#fff9ee" stroke="#c4a58e" pointer-events="all" />
+            <rect x="682" y="191" width="452" height="423" rx="12" ry="12" fill="#fff9ee" stroke="#c4a58e" pointer-events="all" />
           </g>
           <g data-cell-id="n6">
             <g transform="translate(0.5,0.5)">
@@ -232,7 +232,7 @@
               </g>
             </g>
           </g>
-          <g data-cell-id="n20">
+          <g data-cell-id="n20" transform="translate(0,1.25)">
             <g transform="translate(0.5,0.5)">
               <rect x="696" y="330" width="424" height="58" rx="8.7" ry="8.7" fill="#fff9ee" stroke="#c4a58e" pointer-events="all" />
             </g>
@@ -245,7 +245,7 @@
               </g>
             </g>
           </g>
-          <g data-cell-id="n21">
+          <g data-cell-id="n21" transform="translate(0,2.5)">
             <g transform="translate(0.5,0.5)">
               <rect x="696" y="399" width="424" height="58" rx="8.7" ry="8.7" fill="#fff9ee" stroke="#c4a58e" pointer-events="all" />
             </g>
@@ -257,7 +257,7 @@
               </g>
             </g>
           </g>
-          <g data-cell-id="n22">
+          <g data-cell-id="n22" transform="translate(0,3.75)">
             <g transform="translate(0.5,0.5)">
               <rect x="696" y="468" width="424" height="58" rx="8.7" ry="8.7" fill="#f5e7ce" stroke="#b96524" stroke-dasharray="3 3" pointer-events="all" />
             </g>
@@ -270,7 +270,7 @@
               </g>
             </g>
           </g>
-          <g data-cell-id="n23">
+          <g data-cell-id="n23" transform="translate(0,5)">
             <g transform="translate(0.5,0.5)">
               <rect x="696" y="537" width="424" height="58" rx="8.7" ry="8.7" fill="#fff9ee" stroke="#c4a58e" pointer-events="all" />
             </g>
