@@ -49,7 +49,7 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
           <Image src={d.image} alt="" class="hero-img" widths={[480, 800, 1100]} sizes="(min-width: 980px) 42rem, 100vw" loading="eager" />
         )}
 
-        <div class="prose">
+        <div class:list={["prose", { "prose-quem-somos": d.slug === "quem-somos" }]}>
           <Content />
         </div>
 
@@ -114,6 +114,26 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
 </Base>
 
 <style>
+  .prose-quem-somos {
+    max-width: none;
+    line-height: 1.55;
+  }
+
+  .prose-quem-somos :global(p) {
+    margin: 0 0 .8rem;
+    orphans: 2;
+    widows: 2;
+  }
+
+  .prose-quem-somos :global(p:last-child) { margin-bottom: 0; }
+
+  @media (min-width: 75rem) {
+    .prose-quem-somos {
+      column-count: 2;
+      column-gap: 2rem;
+    }
+  }
+
   .subsection-rede :global(.cards > .card:first-child) {
     grid-column: 1 / -1;
   }
