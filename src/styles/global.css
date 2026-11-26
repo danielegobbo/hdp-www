@@ -223,7 +223,7 @@ main { overflow: hidden; }
 .prose strong { font-weight: bold; }
 
 /* Onde Estamos */
-.prose:has(> :is(.locais, .estruturas)) { max-width: none; container-type: inline-size; }
+.prose:has(> .locais) { max-width: none; container-type: inline-size; }
 .locais { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
 @container (min-width: 28rem) { .locais { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 980px) {
@@ -235,35 +235,6 @@ main { overflow: hidden; }
 .prose .local img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; margin: 0; border: 0; }
 .prose .local h2 { margin: .9rem 1rem .6rem; font-size: 1.25rem; }
 .local p { margin: .55rem 1rem .9rem; font-size: .9375rem; overflow-wrap: anywhere; }
-
-/* As Estruturas */
-.estruturas-grelha, .prose .estruturas > ul {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: .75rem;
-  margin: .85rem 0 1.5rem;
-  padding: 0;
-  list-style: none;
-}
-.estruturas-grelha > p, .estruturas > ul > li {
-  min-width: 0;
-  margin: 0;
-  padding: .75rem;
-  border: 1px solid var(--beige);
-  border-radius: .4rem;
-  background: var(--carta);
-  overflow-wrap: anywhere;
-}
-.prose .estruturas-grelha > p:has(img) { padding: 0; overflow: hidden; }
-.prose .estruturas-grelha img { width: 100%; margin: 0; border: 0; border-radius: inherit; }
-.prose .estruturas > p:has(img) { max-width: var(--prose); }
-.prose .estruturas > h2:first-child { margin-top: 0; }
-@container (min-width: 29rem) {
-  .estruturas-grelha, .prose .estruturas > ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@container (min-width: 36rem) {
-  .estruturas-grelha, .prose .estruturas > ul { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-}
 
 .prose table { border-collapse: collapse; width: 100%; font-size: 0.9rem; display: block; overflow-x: auto; }
 .prose th, .prose td { border-bottom: 1px solid var(--beige); padding: 0.55rem 0.75rem 0.55rem 0; text-align: left; vertical-align: top; }

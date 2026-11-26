@@ -5,19 +5,13 @@ section: quem-somos
 order: 1
 atualizado: 2026-11-25
 ---
-<div class="estruturas">
-
-## Estrutura da Unidade Central
-
-<div class="estruturas-grelha">
+**Estrutura da Unidade Central**
 
 A estrutura central do Hospital compõe-se, na parte da frente, de um pavilhão de 2.000 m2 que acolhe o Departamento Administrativo, o Sector das Consultas Externas (Ambulatórios) e Especializadas, o Serviço de Admissão e Arquivo Médico-estatístico, e o Sector do Diagnóstico e Terapêutico, a Farmácia Interna e a Farmácia Externa, que disponibiliza os medicamentos para os doentes das Consultas Externas. Na parte de trás um pavilhão de 2.100 m2 está destinado ao Sector de Internamento: Pediatria, Medicina, Doenças Infecciosas e Centro Nutricional Terapêutico.
 
 O Município de Kilamba Kiaxi conta com uma população estimada de cerca 700.000 habitantes, tendo registado nos anos passados maciços fluxos migratórios do interior devido à guerra. O Hospital foi classificado pelo Governo Provincial de Luanda como Hospital Municipal, tendo uma capacidade total de internamento de aproximadamente 147 camas.
 
 Juntamente ao Hospital Municipal de Kilamba Kiaxi, o Hospital Divina Providência outorga serviços sanitários previstos no “Pacote Mínimo de Serviços” contemplado no DL n. 54/03, com particular cuidado aos serviços preventivos e curativos de Atenção Primária, dando assim cobertura à Área de Saúde de competência (1 Hospital Municipal cada 500.000 habitantes). Neste contexto, o Hospital faz parte da rede Sanitária do Serviço Nacional de Saúde em força de um acordo operativo assinado com a Direcção Provincial de Saúde de Luanda ao 03 de Fevereiro de 1997.
-
-</div>
 
 ![Utentes à espera nos guichés de marcação de consultas da Unidade Central](../../../assets/img/hdp2.jpg)
 
@@ -29,7 +23,7 @@ Juntamente ao Hospital Municipal de Kilamba Kiaxi, o Hospital Divina Providênci
 -   1 Farmácia;
 -   1 Imagiologia (RX, Ecografia, Eco-cardiografia);
 
-### Serviços
+**Serviços**
 
 -   Consulta externa
 -   Urgência (Ambulância, Pequena cirurgia, Primeiro socorro)
@@ -41,7 +35,7 @@ Juntamente ao Hospital Municipal de Kilamba Kiaxi, o Hospital Divina Providênci
 -   Imagiologia (Ecografia, RX, ...)
 -   Farmácia
 
-### Consultas de especialidade
+**Consultas de especialidade**
 
 -   Ecografia
 -   Ortopedia
@@ -57,19 +51,13 @@ Juntamente ao Hospital Municipal de Kilamba Kiaxi, o Hospital Divina Providênci
 -   Gastroenterologia
 -   Urologia
 
-## Estrutura das Unidades Periféricas
-
-<div class="estruturas-grelha">
+**Estrutura das Unidades Periféricas**
 
 As acções sanitárias do Hospital Divina Providência desde sempre visaram principalmente à Atenção Primária, considerando como ponto estratégico o desenvolvimento de prestações a nível de Centros de Saúde periféricos, nas áreas mais carentes de cuidados médicos.
 
 A Rede Periférica do Hospital Divina Providência é constituída por um Centro de tratamento da Tuberculose, um Centro VIH/SIDA e cinco Centros de Saúde, espalhados nos vários bairros do Município de Kilamba Kiaxi.
 
-![Sala de espera do Centro Médico São Marcos](../../../assets/img/sm2.jpg)
-
-</div>
-
-### Serviços
+**Serviços**
 
 -   Puericultura
 -   Vacinas
@@ -80,4 +68,4 @@ A Rede Periférica do Hospital Divina Providência é constituída por um Centro
 -   Farmácia
 -   Malnutrição
 
-</div>
+![Sala de espera do Centro Médico São Marcos](../../../assets/img/sm2.jpg)
