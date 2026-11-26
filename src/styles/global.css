@@ -119,10 +119,7 @@ main { overflow: hidden; }
 .hero-wide .intro h1 { margin-bottom: 0; }
 .hero-wide .intro-text p { margin-top: 0; }
 .hero-wide figure { min-height: 0; aspect-ratio: 8 / 3; max-height: 600px; width: 100%; }
-.hero-wide figure img {
-  object-position: 35% 60%;
-  filter: brightness(1.13) contrast(.97) saturate(1.07);
-}
+.hero-wide figure img { object-position: 35% 60%; }
 .hero-wide figcaption { left: var(--gutter); }
 
 .ribbon {

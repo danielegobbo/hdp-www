@@ -4,7 +4,7 @@ import Base from "../layouts/Base.astro";
 import Cards from "../components/Cards.astro";
 import { todasPaginas, filhas } from "../lib/paginas";
 import { site } from "../data/site";
-import pavilhao from "../assets/img/hdp-pavilhao.jpg";
+import pavilhao from "../assets/img/hdp-pavilhao-retocado.webp";
 
 const todas = await todasPaginas();
 const unidades = filhas(todas, "rede-sanitaria").filter((p) => p.data.image);
@@ -47,7 +47,7 @@ const servicos = [
         loading="eager"
         fetchpriority="high"
       />
-      <figcaption>Unidade Central · Kilamba Kiaxi, Luanda</figcaption>
+      <figcaption>Unidade Central · Kilamba Kiaxi, Luanda · Imagem retocada com IA</figcaption>
     </figure>
   </section>
 
