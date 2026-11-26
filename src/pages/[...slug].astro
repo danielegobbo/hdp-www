@@ -22,6 +22,7 @@ const mae = d.section ? todas.find((p) => p.data.slug === d.section) : undefined
 const subpaginas = filhas(todas, d.slug);
 const secao = mae ?? pagina;
 const navLateral = [secao, ...filhas(todas, secao.data.slug)];
+const isQuemSomos = d.slug === "quem-somos";
 const isRedeSanitaria = d.slug === "rede-sanitaria";
 const isEspecialidade = d.section === "servicos";
 const consultas = site.horario.find((h) => h.local.startsWith("Consultas")) ?? site.horario[0];
@@ -29,7 +30,7 @@ const fmt = new Intl.DateTimeFormat(site.idioma, { month: "long", year: "numeric
 const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
 ---
 <Base title={d.title} description={d.description ?? (resumo(pagina) || undefined)}>
-  <div class="page">
+  <div class:list={["page", { "page-quem-somos": isQuemSomos }]}>
     <nav class="breadcrumb" aria-label="Caminho">
       <ol>
         <li><a href="/">Início</a></li>
@@ -87,6 +88,8 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
             {d.atualizado && <>Última actualização do conteúdo: {fmt.format(d.atualizado)}.</>}
           </p>
         )}
+
+        {isQuemSomos && <Organigramas />}
       </article>
 
       {navLateral.length > 1 && (
@@ -109,11 +112,13 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
       )}
     </div>
 
-    {d.slug === "quem-somos" && <Organigramas />}
   </div>
 </Base>
 
 <style>
+  .page-quem-somos :is(.page-head, .prose) { max-width: 60rem; }
+  .page-quem-somos .layout { grid-template-columns: minmax(0, 1fr); gap: 50px; }
+
   .subsection-rede :global(.cards > .card:first-child) {
     grid-column: 1 / -1;
   }

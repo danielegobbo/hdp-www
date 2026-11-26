@@ -6,8 +6,7 @@ atualizado: 2026-11-25
 ---
 O Hospital Divina Providência (HDP), construído no ano 1994, é uma Instituição que pertence à Obra da Divina Providência, Organização não Governamental Nacional vinculada à Igreja Católica, sem fins lucrativos, cujo objecto social é oferecer assistência à população mais carente.
 
-A ONG constituiu-se oficialmente em 28 de Janeiro de 2000, e obteve o reconhecimento do Governo Angolano mediante a publicação no Diário da República (III Série – N.º 32 do dia 11/08/2000) do estatuto e da acta constitutiva.
-A nossa acção inspira-se no carisma de São João Calábria, padre italiano que viveu entre os séculos XVIII e XIX e que sentiu-se chamado a manifestar ao mundo a Paternidade de Deus e sua Providência no serviço a favor dos mais necessitados, com espírito de dedicação, disponibilidade e responsabilidade.
+A ONG constituiu-se oficialmente em 28 de Janeiro de 2000, e obteve o reconhecimento do Governo Angolano mediante a publicação no Diário da República (III Série – N.º 32 do dia 11/08/2000) do estatuto e da acta constitutiva. A nossa acção inspira-se no carisma de São João Calábria, padre italiano que viveu entre os séculos XVIII e XIX e que sentiu-se chamado a manifestar ao mundo a Paternidade de Deus e sua Providência no serviço a favor dos mais necessitados, com espírito de dedicação, disponibilidade e responsabilidade.
 
 A Obra da Divina Providência (ODP) está presente em Angola desde 1982 e vem desenvolvendo importantes acções de impacto social, que abrangem o sector da saúde, a instrução, a formação profissional, a atenção às crianças órfãs e abandonadas.
 
