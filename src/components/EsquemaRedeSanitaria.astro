@@ -46,12 +46,14 @@ const imagemEsquema = "/img/rede-sanitaria-drawio.svg";
   .ramos { display: grid; gap: .85rem; }
   .ramos section { min-width: 0; border: 1px solid var(--beige); border-top: 3px solid var(--oro); border-radius: .4rem; background: var(--crema); }
   h3 { margin: 0; padding: .8rem .85rem .6rem; }
-  ul { display: grid; margin: 0; padding: 0 .85rem .7rem; list-style: none; }
-  li { border-top: 1px solid var(--beige); padding: .4rem 0; font-size: .9375rem; }
+  ul { display: grid; grid-template-columns: minmax(0, 1fr); gap: .5rem; margin: 0; padding: 0 .85rem .85rem; list-style: none; }
+  li { padding: .55rem .65rem; border: 1px solid var(--beige); border-radius: .35rem; background: var(--carta); font-size: .9375rem; }
   small { display: block; color: var(--muted); font-size: .875rem; }
   .encerrada { font-weight: bold; }
-  @container (min-width: 41rem) {
-    .ramos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .servicos { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: .75rem; }
+  @container (min-width: 29rem) {
+    ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @container (min-width: 36rem) {
+    ul { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   }
 </style>
