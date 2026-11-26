@@ -25,7 +25,7 @@ const osmUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=18/${
       ))}
     </div>
     <div class="mapa-notas">
-      <p>As localizações das unidades periféricas são aproximadas.</p>
+      <p>Os marcadores com a indicação «Localização aproximada» foram posicionados a partir do mapa histórico.</p>
       <a href={osmUrl}>Ver a Unidade Central no OpenStreetMap</a>
     </div>
   </div>
@@ -56,15 +56,23 @@ const osmUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=18/${
       }
     }
 
-    const marcadores = unidades.map(({ nome, abreviatura, posicao, slug, encerrada }, i) => {
+    const marcadores = unidades.map(({ nome, abreviatura, posicao, slug, encerrada, posicaoAproximada }, i) => {
       const central = i === 0;
       const popup = document.createElement("div");
       const link = document.createElement("a");
       link.href = new URL(`./${slug}/`, location.href).href;
       link.textContent = nome;
-      const nota = document.createElement("p");
-      nota.textContent = central ? "Unidade Central" : encerrada ? "Encerrado · Localização aproximada" : "Localização aproximada";
-      popup.append(link, nota);
+      popup.append(link);
+      const estado = [
+        central && "Unidade Central",
+        encerrada && "Encerrado",
+        posicaoAproximada && "Localização aproximada",
+      ].filter(Boolean).join(" · ");
+      if (estado) {
+        const nota = document.createElement("p");
+        nota.textContent = estado;
+        popup.append(nota);
+      }
       return L.marker(posicao, {
         title: encerrada ? `${nome} (encerrado)` : nome,
         zIndexOffset: central ? 1000 : 0,

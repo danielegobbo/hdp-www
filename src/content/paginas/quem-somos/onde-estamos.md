@@ -43,6 +43,8 @@ Município de Kilamba Kiaxi, Sub-zona 10
 
 Município de Kilamba Kiaxi, Golf 2
 
+[Ver no Google Maps](https://www.google.com/maps/search/?api=1&query=-8.880599132795126%2C13.253043275127462)
+
 </section>
 
 <section class="local">
