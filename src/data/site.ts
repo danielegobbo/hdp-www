@@ -10,7 +10,7 @@ export const site = {
   descricao:
     "Hospital da Obra da Divina Providência em Luanda: urgência 24 horas, internamento, consultas de especialidade e uma rede de centros de saúde no Município de Kilamba Kiaxi.",
   morada: "Avenida Pedro de Castro Van Dunem, S/N, Bairro Golf, Município de Kilamba Kiaxi, Luanda, Angola",
-  mapa: "https://maps.app.goo.gl/MUC1PeFY3kJiVYa28",
+  mapa: "https://www.google.com/maps/search/?api=1&query=-8.876395147435874%2C13.268005165664476",
   telefone: "+244 916 025 301",
   email: "geral@hospitaldivinaprovidencia.net",
   horario: [

@@ -12,7 +12,7 @@ export const unidadeCentral: UnidadeDaRede = {
   nome: "Hospital Divina Providência",
   abreviatura: "HDP",
   slug: "hospital-divina-providencia",
-  posicao: [-8.876806, 13.268453],
+  posicao: [-8.876395147435874, 13.268005165664476],
 };
 
 // As posições assinaladas como aproximadas foram medidas no mapa histórico (88-1.png).

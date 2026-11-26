@@ -11,9 +11,9 @@ atualizado: 2026-11-25
 
 ![Hospital Divina Providência](../../../assets/img/hdp1.jpg)
 
-## [Hospital Divina Providência](https://maps.app.goo.gl/MUC1PeFY3kJiVYa28)
+## [Hospital Divina Providência](https://www.google.com/maps/search/?api=1&query=-8.876395147435874%2C13.268005165664476)
 
-[Ver no Google Maps](https://maps.app.goo.gl/MUC1PeFY3kJiVYa28)
+[Ver no Google Maps](https://www.google.com/maps/search/?api=1&query=-8.876395147435874%2C13.268005165664476)
 
 Avenida Pedro De Castra Van Dunem, Bairro Golf, Município Kilamba Kiaxi , Luanda, Angola.
 
