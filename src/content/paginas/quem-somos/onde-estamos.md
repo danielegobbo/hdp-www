@@ -5,9 +5,13 @@ section: quem-somos
 order: 2
 atualizado: 2026-11-25
 ---
-[Hospital Divina Providência](https://maps.app.goo.gl/MUC1PeFY3kJiVYa28)
+<div class="locais">
+
+<section class="local">
 
 ![Hospital Divina Providência](../../../assets/img/hdp1.jpg)
+
+## [Hospital Divina Providência](https://maps.app.goo.gl/MUC1PeFY3kJiVYa28)
 
 [Ver no Google Maps](https://maps.app.goo.gl/MUC1PeFY3kJiVYa28)
 
@@ -19,42 +23,56 @@ Site: [http://www.hospitaldivinaprovidencia.net](http://www.hospitaldivinaprovid
 
 E-mail: geral@hospitaldivinaprovidencia.net;
 
-* * *
+</section>
 
-**Centro de Saúde São João Calábria**
+<section class="local">
 
 ![Utentes à espera no Centro de Saúde São João Calábria](../../../assets/img/sjc2.jpg)
 
+## Centro de Saúde São João Calábria
+
 Município de Kilamba Kiaxi, Sub-zona 10
 
-* * *
+</section>
 
-**Centro de Saúde Nossa Senhora da Paz**
+<section class="local">
 
 ![Mães com crianças na sala de espera do Centro de Saúde Nossa Senhora da Paz](../../../assets/img/nsp3.jpg)
 
+## Centro de Saúde Nossa Senhora da Paz
+
 Município de Kilamba Kiaxi, Golf 2
 
-* * *
+</section>
 
-**Centro de Saúde Santa Catarina**
+<section class="local">
 
 ![Centro de Saúde Santa Catarina](../../../assets/img/sc1.jpg)
 
+## Centro de Saúde Santa Catarina
+
 Município de Kilamba Kiaxi, Palanca
 
-* * *
+</section>
 
-**Centro de Saúde Santa Teresinha**
+<section class="local">
 
 ![Centro de Saúde Santa Teresinha](../../../assets/img/st1.jpg)
 
+## Centro de Saúde Santa Teresinha
+
 Município de Kilamba Kiaxi, Sub-zona 7
 
-* * *
+</section>
 
-**Centro Médico São Marcos**
+<section class="local">
 
 ![Sala de espera do Centro Médico São Marcos](../../../assets/img/sm2.jpg)
 
+## Centro Médico São Marcos
+
 Município de Kilamba Kiaxi, Kapolo 2, zona Sapú.
+
+</section>
+
+</div>

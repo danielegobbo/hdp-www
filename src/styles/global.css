@@ -221,6 +221,21 @@ main { overflow: hidden; }
 .prose ul, .prose ol { padding-left: 1.25rem; }
 .prose li::marker { color: var(--ambra); }
 .prose strong { font-weight: bold; }
+
+/* Onde Estamos */
+.prose:has(> .locais) { max-width: none; container-type: inline-size; }
+.locais { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+@container (min-width: 28rem) { .locais { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 980px) {
+  @container (min-width: 36rem) { .locais { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+}
+
+.local { min-width: 0; overflow: hidden; border: 1px solid var(--beige); border-radius: .55rem; background: var(--carta); }
+.prose .local > p:first-child { margin: 0; }
+.prose .local img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; margin: 0; border: 0; }
+.prose .local h2 { margin: .9rem 1rem .6rem; font-size: 1.25rem; }
+.local p { margin: .55rem 1rem .9rem; font-size: .9375rem; overflow-wrap: anywhere; }
+
 .prose table { border-collapse: collapse; width: 100%; font-size: 0.9rem; display: block; overflow-x: auto; }
 .prose th, .prose td { border-bottom: 1px solid var(--beige); padding: 0.55rem 0.75rem 0.55rem 0; text-align: left; vertical-align: top; }
 .prose th { text-transform: uppercase; font-size: 11px; letter-spacing: 1.5px; }
