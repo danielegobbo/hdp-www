@@ -1,46 +1,48 @@
 ---
 import { servicosCentrais, unidadeCentral, unidadesPerifericas } from "../data/rede-sanitaria";
+
+const imagemEsquema = "/img/rede-sanitaria-drawio.svg";
 ---
 <section class="esquema-rede" aria-labelledby="esquema-rede-titulo">
   <h2 id="esquema-rede-titulo">Estrutura da rede sanitária</h2>
-  <div class="quadro">
-    <p class="hospital">Hospital Divina Providência</p>
-    <div class="ramos">
-      <section>
-        <h3><a href={`/rede-sanitaria/${unidadeCentral.slug}/`}>Unidade Central</a></h3>
-        <ul class="servicos">
-          {servicosCentrais.map((nome) => <li>{nome}</li>)}
-        </ul>
-      </section>
-      <section>
-        <h3>Unidades periféricas</h3>
-        <ul class="unidades">
-          {unidadesPerifericas.map(({ nome, slug, nota, encerrada }) => (
-            <li>
-              <a href={`/rede-sanitaria/${slug}/`}>{nome}</a>
-              {nota && <small class:list={[{ encerrada }]}>{nota}</small>}
-            </li>
-          ))}
-        </ul>
-      </section>
+  <a class="esquema-imagem" href={imagemEsquema}>
+    <img src={imagemEsquema} width="1138" height="632" alt="Esquema da Unidade Central e das cinco unidades periféricas" loading="lazy" decoding="async" />
+    <span>Ver esquema ampliado</span>
+  </a>
+  <details>
+    <summary>Consultar unidades e serviços em texto</summary>
+    <div class="quadro">
+      <div class="ramos">
+        <section>
+          <h3><a href={`/rede-sanitaria/${unidadeCentral.slug}/`}>Unidade Central</a></h3>
+          <ul class="servicos">
+            {servicosCentrais.map((nome) => <li>{nome}</li>)}
+          </ul>
+        </section>
+        <section>
+          <h3>Unidades periféricas</h3>
+          <ul class="unidades">
+            {unidadesPerifericas.map(({ nome, slug, nota, encerrada }) => (
+              <li>
+                <a href={`/rede-sanitaria/${slug}/`}>{nome}</a>
+                {nota && <small class:list={[{ encerrada }]}>{nota}</small>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
     </div>
-  </div>
+  </details>
 </section>
 <style>
   .esquema-rede { margin-block: 2.5rem; container-type: inline-size; }
   h2 { font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.2rem); }
+  .esquema-imagem { display: grid; gap: .5rem; justify-items: start; }
+  .esquema-imagem img { width: 100%; height: auto; border: 1px solid var(--beige); border-radius: .75rem; }
+  .esquema-imagem span { font-size: .9375rem; text-decoration: underline; text-decoration-color: var(--ambra); }
+  details { margin-top: .85rem; }
+  summary { width: fit-content; cursor: pointer; margin-bottom: .65rem; }
   .quadro { border: 1px solid var(--beige); border-radius: .75rem; padding: clamp(.85rem, 3vw, 1.5rem); background: var(--carta); }
-  .hospital {
-    position: relative;
-    width: fit-content;
-    margin: 0 auto 1.25rem;
-    padding: .65rem 1rem;
-    border-radius: .4rem;
-    background: var(--marrone);
-    color: var(--carta);
-    text-align: center;
-    font: 1.25rem/1.25 var(--serif);
-  }
   .ramos { display: grid; gap: .85rem; }
   .ramos section { min-width: 0; border: 1px solid var(--beige); border-top: 3px solid var(--oro); border-radius: .4rem; background: var(--crema); }
   h3 { margin: 0; padding: .8rem .85rem .6rem; }
@@ -49,10 +51,7 @@ import { servicosCentrais, unidadeCentral, unidadesPerifericas } from "../data/r
   small { display: block; color: var(--muted); font-size: .875rem; }
   .encerrada { font-weight: bold; }
   @container (min-width: 41rem) {
-    .hospital { margin-bottom: 1.75rem; }
-    .hospital::after { content: ""; position: absolute; top: 100%; left: 50%; height: .85rem; border-left: 1px solid var(--ambra); }
-    .ramos { position: relative; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .ramos::before { content: ""; position: absolute; inset: -.9rem 25% 100%; border: 1px solid var(--ambra); border-bottom: 0; }
+    .ramos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .servicos { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: .75rem; }
   }
 </style>
