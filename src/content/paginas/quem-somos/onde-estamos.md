@@ -33,6 +33,8 @@ E-mail: geral@hospitaldivinaprovidencia.net;
 
 Município de Kilamba Kiaxi, Sub-zona 10
 
+[Ver no Google Maps](https://www.google.com/maps/search/?api=1&query=-8.860727032755117%2C13.244776270329032)
+
 </section>
 
 <section class="local">

@@ -25,7 +25,6 @@ const osmUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=18/${
       ))}
     </div>
     <div class="mapa-notas">
-      <p>Os marcadores com a indicação «Localização aproximada» foram posicionados a partir do mapa histórico.</p>
       <a href={osmUrl}>Ver a Unidade Central no OpenStreetMap</a>
     </div>
   </div>
@@ -56,7 +55,7 @@ const osmUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=18/${
       }
     }
 
-    const marcadores = unidades.map(({ nome, abreviatura, posicao, slug, encerrada, posicaoAproximada }, i) => {
+    const marcadores = unidades.map(({ nome, abreviatura, posicao, slug, encerrada }, i) => {
       const central = i === 0;
       const popup = document.createElement("div");
       const link = document.createElement("a");
@@ -66,7 +65,6 @@ const osmUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=18/${
       const estado = [
         central && "Unidade Central",
         encerrada && "Encerrado",
-        posicaoAproximada && "Localização aproximada",
       ].filter(Boolean).join(" · ");
       if (estado) {
         const nota = document.createElement("p");
@@ -184,7 +182,6 @@ const osmUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=18/${
   .encerrada span { background: var(--muted); color: var(--carta); }
   button small { font-size: .8rem; font-weight: bold; }
   .mapa-notas { display: flex; flex-wrap: wrap; gap: .3rem 1rem; padding: .75rem .8rem; font-size: .875rem; }
-  .mapa-notas p { margin: 0; color: var(--muted); }
   .mapa-canvas :global(.mapa-marcador) {
     display: grid;
     place-items: center;

@@ -3,7 +3,6 @@ export interface UnidadeDaRede {
   abreviatura: string;
   slug: string;
   posicao: [number, number];
-  posicaoAproximada?: boolean;
   nota?: string;
   encerrada?: boolean;
 }
@@ -15,9 +14,8 @@ export const unidadeCentral: UnidadeDaRede = {
   posicao: [-8.876395147435874, 13.268005165664476],
 };
 
-// As posições assinaladas como aproximadas foram medidas no mapa histórico (88-1.png).
 export const unidadesPerifericas: UnidadeDaRede[] = [
-  { nome: "Centro Médico São João Calábria", abreviatura: "SJC", slug: "centro-medico-sao-joao-calabria", posicao: [-8.864, 13.249], posicaoAproximada: true, nota: "Laboratório e farmácia" },
+  { nome: "Centro Médico São João Calábria", abreviatura: "SJC", slug: "centro-medico-sao-joao-calabria", posicao: [-8.860727032755117, 13.244776270329032], nota: "Laboratório e farmácia" },
   { nome: "Posto Médico Nossa Senhora da Paz", abreviatura: "NSP", slug: "posto-medico-nossa-senhora-da-paz", posicao: [-8.880599132795126, 13.253043275127462], nota: "Laboratório e farmácia" },
   { nome: "Posto Médico Santa Catarina", abreviatura: "SC", slug: "posto-medico-santa-catarina", posicao: [-8.875285596648588, 13.277176285266185] },
   { nome: "Posto Médico Santa Teresinha", abreviatura: "ST", slug: "posto-medico-santa-terezinha", posicao: [-8.87164302174692, 13.26155238429675], nota: "Encerrado por falta de recursos e pessoal", encerrada: true },
