@@ -65,6 +65,8 @@ Município de Kilamba Kiaxi, Palanca
 
 Município de Kilamba Kiaxi, Sub-zona 7
 
+[Ver no Google Maps](https://www.google.com/maps/search/?api=1&query=-8.87164302174692%2C13.26155238429675)
+
 </section>
 
 <section class="local">
