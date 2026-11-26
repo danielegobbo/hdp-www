@@ -88,8 +88,6 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
             {d.atualizado && <>Última actualização do conteúdo: {fmt.format(d.atualizado)}.</>}
           </p>
         )}
-
-        {isQuemSomos && <Organigramas />}
       </article>
 
       {navLateral.length > 1 && (
@@ -112,12 +110,27 @@ const tel = (n: string) => "tel:" + n.split("/")[0].replace(/[^\d+]/g, "");
       )}
     </div>
 
+    {isQuemSomos && <Organigramas />}
   </div>
 </Base>
 
 <style>
   .page-quem-somos :is(.page-head, .prose) { max-width: 60rem; }
-  .page-quem-somos .layout { grid-template-columns: minmax(0, 1fr); gap: 50px; }
+  .page-quem-somos .prose :global(p) { text-align: justify; hyphens: auto; }
+
+  @media (min-width: 980px) {
+    .page-quem-somos {
+      --largura-menu: clamp(11.25rem, 16vw, 15rem);
+      --espaco-menu: clamp(1.5rem, 3vw, 3rem);
+    }
+    .page-quem-somos .layout {
+      grid-template-columns: minmax(0, 1fr) var(--largura-menu);
+      gap: var(--espaco-menu);
+    }
+    .page-quem-somos .page-head {
+      max-width: min(60rem, calc(100% - var(--largura-menu) - var(--espaco-menu)));
+    }
+  }
 
   .subsection-rede :global(.cards > .card:first-child) {
     grid-column: 1 / -1;
